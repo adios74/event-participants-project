@@ -20,6 +20,11 @@ from werkzeug.utils import secure_filename
 from wtforms import StringField, TextAreaField, SubmitField, FileField
 from wtforms.validators import DataRequired, Length
 from flask_bootstrap import Bootstrap
+import qrcode
+from io import BytesIO
+import base64
+from datetime import datetime, timedelta
+import secrets
 
 basedir = os.path.abspath(os.path.dirname(__file__))
 
@@ -28,7 +33,7 @@ login = LoginManager(app)
 login.login_view = 'login'
 app.config['SECRET_KEY'] = 'you-will-never-guess'
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL') or \
-    'sqlite:///' + os.path.join(basedir, 'app.db')
+                                        'sqlite:///' + os.path.join(basedir, 'app.db')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 bootstrap = Bootstrap(app)
 
@@ -44,13 +49,11 @@ def internal_error(error):
     db.session.rollback()
     return render_template('500.html'), 500
 
-
 class LoginForm(FlaskForm):
     username = StringField('Имя пользователя', validators=[DataRequired()])
     password = PasswordField('Пароль', validators=[DataRequired()])
     remember_me = BooleanField('Запомнить меня')
     submit = SubmitField('Войти')
-
 
 class User(UserMixin, db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -59,6 +62,8 @@ class User(UserMixin, db.Model):
     password_hash = db.Column(db.String(128))
     about_me = db.Column(db.String(140))
     avatar = db.Column(db.String(120))
+    qr_code_token = db.Column(db.String(32), index=True)
+    qr_code_token_expiration = db.Column(db.DateTime)
 
     def avatar_url(self, size=128):
         if self.avatar:
@@ -75,11 +80,46 @@ class User(UserMixin, db.Model):
     def check_password(self, password):
         return check_password_hash(self.password_hash, password)
 
+    def generate_qr_token(self, expires_in=3600):
+        self.qr_code_token = secrets.token_hex(16)
+        self.qr_code_token_expiration = datetime.utcnow() + timedelta(seconds=expires_in)
+        db.session.add(self)
+        db.session.commit()
+        return self.qr_code_token
+
+    def revoke_qr_token(self):
+        self.qr_code_token_expiration = datetime.utcnow() - timedelta(seconds=1)
+        db.session.add(self)
+        db.session.commit()
+
+    def check_qr_token(self, token):
+        if self.qr_code_token == token and self.qr_code_token_expiration > datetime.utcnow():
+            return True
+        return False
+
+    def get_qr_code(self):
+        if not self.qr_code_token or self.qr_code_token_expiration < datetime.utcnow():
+            self.generate_qr_token()
+
+        qr = qrcode.QRCode(
+            version=1,
+            error_correction=qrcode.constants.ERROR_CORRECT_L,
+            box_size=10,
+            border=4,
+        )
+        qr_data = f"{self.id}:{self.qr_code_token}"
+        qr.add_data(qr_data)
+        qr.make(fit=True)
+
+        img = qr.make_image(fill_color="black", back_color="white")
+        buffered = BytesIO()
+        img.save(buffered, format="PNG")
+        img_str = base64.b64encode(buffered.getvalue()).decode()
+        return f"data:image/png;base64,{img_str}"
 
 @login.user_loader
 def load_user(id):
     return db.session.get(User, int(id))
-
 
 class RegistrationForm(FlaskForm):
     username = StringField('Имя пользователя', validators=[DataRequired()])
@@ -99,7 +139,6 @@ class RegistrationForm(FlaskForm):
         if user is not None:
             raise ValidationError('К этому адресу электронной почты уже привязан аккаунт.')
 
-
 class EditProfileForm(FlaskForm):
     username = StringField('Имя пользователя', validators=[DataRequired()])
     about_me = TextAreaField('Обо мне', validators=[Length(min=0, max=140)])
@@ -117,7 +156,6 @@ class EditProfileForm(FlaskForm):
             if user is not None:
                 raise ValidationError('Это имя уже занято')
 
-
 @app.shell_context_processor
 def make_shell_context():
     return {'db': db, 'User': User}
@@ -126,7 +164,6 @@ def make_shell_context():
 @app.route('/index')
 @login_required
 def index():
-    user = {'username': 'пользователь'}
     return render_template('index.html', title='Главная')
 
 @app.route('/login', methods=['GET', 'POST'])
@@ -153,7 +190,6 @@ def logout():
     logout_user()
     return redirect(url_for('index'))
 
-
 @app.route('/register', methods=['GET', 'POST'])
 def register():
     if current_user.is_authenticated:
@@ -168,8 +204,6 @@ def register():
         return redirect(url_for('login'))
     return render_template('register.html', title='Регистрация', form=form)
 
-
-
 @app.route('/user/<username>')
 @login_required
 def user(username):
@@ -179,35 +213,108 @@ def user(username):
 @app.route('/edit_profile', methods=['GET', 'POST'])
 @login_required
 def edit_profile():
-    form = EditProfileForm(current_user.username)
+    return redirect(url_for('edit_profile_with_username', username=current_user.username))
+
+@app.route('/edit_profile/<username>', methods=['GET', 'POST'])
+@login_required
+def edit_profile_with_username(username):
+    user = User.query.filter_by(username=username).first_or_404()
+    is_owner = current_user.id == user.id
+
+    qr_token = request.args.get('qr_token')
+    has_qr_access = False
+
+    if qr_token and user.check_qr_token(qr_token):
+        has_qr_access = True
+    elif not is_owner:
+        flash('У вас нет прав для редактирования этого профиля', 'error')
+        return redirect(url_for('index'))
+
+    form = EditProfileForm(user.username)
+
     if form.validate_on_submit():
-        current_user.username = form.username.data
-        current_user.about_me = form.about_me.data
-        if form.remove_avatar.data and current_user.avatar:
+        if has_qr_access:
+            if form.username.data != user.username:
+                flash('Вы не можете изменять имя пользователя с временным доступом', 'error')
+                return redirect(url_for('edit_profile_with_username', username=user.username, qr_token=qr_token))
+        else:
+            user.username = form.username.data
+
+        user.about_me = form.about_me.data
+
+        if form.remove_avatar.data and user.avatar:
             avatar_path = os.path.join(basedir, 'static', 'uploads', 'avatars')
-            old_avatar = os.path.join(avatar_path, current_user.avatar)
+            old_avatar = os.path.join(avatar_path, user.avatar)
             if os.path.exists(old_avatar):
                 os.remove(old_avatar)
-            current_user.avatar = None
+            user.avatar = None
         elif form.avatar.data:
             avatar = form.avatar.data
-            filename = secure_filename(f"{current_user.id}_{avatar.filename}")
+            filename = secure_filename(f"{user.id}_{avatar.filename}")
             avatar_path = os.path.join(basedir, 'static', 'uploads', 'avatars')
             os.makedirs(avatar_path, exist_ok=True)
             avatar.save(os.path.join(avatar_path, filename))
-            if current_user.avatar:
-                old_avatar = os.path.join(avatar_path, current_user.avatar)
+            if user.avatar:
+                old_avatar = os.path.join(avatar_path, user.avatar)
                 if os.path.exists(old_avatar):
                     os.remove(old_avatar)
-            current_user.avatar = filename
+            user.avatar = filename
+
         db.session.commit()
         flash('Изменения успешно сохранены')
-        return redirect(url_for('edit_profile'))
+
+        if has_qr_access:
+            return redirect(url_for('edit_profile_with_username', username=user.username, qr_token=qr_token))
+        return redirect(url_for('edit_profile_with_username', username=user.username))
+
     elif request.method == 'GET':
-        form.username.data = current_user.username
-        form.about_me.data = current_user.about_me
-    return render_template('edit_profile.html', title='Редактировать профиль',
-                           form=form)
+        form.username.data = user.username
+        form.about_me.data = user.about_me
+
+    return render_template(
+        'edit_profile.html',
+        title='Редактировать профиль',
+        form=form,
+        user=user,
+        is_owner=is_owner,
+        has_qr_access=has_qr_access
+    )
+
+@app.route('/generate_qr', methods=['GET', 'POST'])
+@login_required
+def generate_qr():
+    current_user.generate_qr_token()
+    expiration_time = (datetime.utcnow() + timedelta(hours=1)).strftime('%H:%M')
+    return render_template('qr_code.html',
+                         title='Мой QR-код',
+                         expiration_time=expiration_time)
+
+@app.route('/scan_qr', methods=['GET', 'POST'])
+@login_required
+def scan_qr():
+    if request.method == 'POST':
+        qr_data = request.form.get('qr_data')
+        if not qr_data:
+            flash('Не удалось прочитать QR-код')
+            return redirect(url_for('scan_qr'))
+
+        try:
+            user_id, token = qr_data.split(':')
+            user = User.query.get(int(user_id))
+            if user and user.check_qr_token(token):
+                return redirect(url_for(
+                    'edit_profile_with_username',
+                    username=user.username,
+                    qr_token=token
+                ))
+            else:
+                flash('Недействительный или просроченный QR-код')
+        except (ValueError, AttributeError):
+            flash('Неверный формат QR-кода')
+
+        return redirect(url_for('scan_qr'))
+
+    return render_template('scan_qr.html', title='Сканировать QR-код')
 
 if __name__ == '__main__':
     app.run(debug=True)
