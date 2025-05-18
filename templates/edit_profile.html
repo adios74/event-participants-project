@@ -131,10 +131,24 @@
         background-color: #f1f5f9;
         border-color: #94a3b8;
     }
-</style>
 
-<div class="profile-edit-container">
-    <h1 class="profile-edit-title">Редактировать профиль</h1>
+    .access-notice {
+        background: #fff3cd;
+        padding: 1rem;
+        border-radius: 6px;
+        margin-bottom: 1.5rem;
+        border-left: 4px solid #ffc107;
+        color: #856404;
+    }
+</style>
+    {% if not is_owner %}
+    <div class="access-notice">
+        Вы редактируете профиль пользователя {{ user.username }} с временным доступом.
+        Изменения будут сохранены, но доступ будет прекращен после завершения сессии.
+    </div>
+    {% endif %}
+
+    <h1 class="profile-edit-title">Редактировать профиль {{ user.username }}</h1>
 
     <form action="" method="post" enctype="multipart/form-data">
         {{ form.hidden_tag() }}

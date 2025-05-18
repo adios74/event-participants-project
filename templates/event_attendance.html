@@ -1,0 +1,164 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="attendance-container">
+    <h2>Управление посещаемостью: {{ event.title }}</h2>
+
+    <div class="attendance-stats">
+        Всего участников: {{ users|length }} |
+        Присутствовало: {{ attendees_count }}
+    </div>
+
+    <div class="search-box">
+        <input type="text" id="user-search" placeholder="Поиск участников..." class="search-input">
+    </div>
+
+    <div class="attendance-list">
+        {% for user in users %}
+        <div class="attendance-item" data-user-id="{{ user.id }}">
+            <div class="user-info">
+                <img src="{{ user.avatar_url }}" class="user-avatar">
+                <span class="user-name">{{ user.username }}</span>
+            </div>
+            <button class="attendance-toggle {% if user.is_attended %}attended{% endif %}"
+                    data-event-id="{{ event.id }}"
+                    data-user-id="{{ user.id }}"
+                    data-attendance-id="{{ user.attendance_id }}">
+                {% if user.is_attended %}✓ Присутствовал{% else %}Отметить{% endif %}
+            </button>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<style>
+    .attendance-container {
+        max-width: 800px;
+        margin: 30px auto;
+        padding: 30px;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .attendance-stats {
+        background: #f8f9fa;
+        padding: 10px;
+        border-radius: 6px;
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+
+    .search-input {
+        width: 100%;
+        padding: 12px 15px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+
+    .attendance-list {
+        display: grid;
+        gap: 10px;
+    }
+
+    .attendance-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px;
+        background: #f8f9fa;
+        border-radius: 8px;
+        transition: all 0.3s;
+    }
+
+    .user-info {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .user-avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .attendance-toggle {
+        padding: 8px 16px;
+        border: none;
+        border-radius: 20px;
+        background: #e0e0e0;
+        color: #333;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+
+    .attendance-toggle.attended {
+        background: #4caf50;
+        color: white;
+    }
+
+    .attendance-toggle:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Поиск участников
+    document.getElementById('user-search').addEventListener('input', function(e) {
+        const searchTerm = e.target.value.toLowerCase();
+        document.querySelectorAll('.attendance-item').forEach(item => {
+            const userName = item.querySelector('.user-name').textContent.toLowerCase();
+            item.style.display = userName.includes(searchTerm) ? 'flex' : 'none';
+        });
+    });
+
+    document.querySelectorAll('.attendance-toggle').forEach(button => {
+        button.addEventListener('click', async function() {
+            const eventId = this.dataset.eventId;
+            const userId = this.dataset.userId;
+            const isCurrentlyAttended = this.classList.contains('attended');
+
+            const originalText = this.textContent;
+            this.disabled = true;
+            this.textContent = 'Загрузка...';
+
+            try {
+                const response = await fetch(`/toggle_attendance/${eventId}/${userId}`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    }
+                });
+
+                const data = await response.json();
+
+                if (data.success) {
+                    this.classList.toggle('attended');
+                    this.textContent = data.attended ? '✓ Присутствовал' : 'Отметить';
+                    this.dataset.attendanceId = data.attendance_id;
+
+                    document.querySelector('.attendance-stats').textContent =
+                        `Всего участников: {{ users|length }} | ` +
+                        `Присутствовало: ${data.new_count}`;
+                } else {
+                    alert('Ошибка: ' + (data.error || 'Неизвестная ошибка'));
+                    this.textContent = originalText;
+                }
+            } catch (error) {
+                console.error('Ошибка:', error);
+                alert('Произошла ошибка при обновлении посещаемости');
+                this.textContent = originalText;
+            } finally {
+                this.disabled = false;
+            }
+        });
+    });
+});
+</script>
+{% endblock %}

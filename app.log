@@ -1,0 +1,721 @@
+2025-05-18 12:56:08,749 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-albert-small-v2
+2025-05-18 12:56:32,967 - app - INFO - ИИ-модель успешно загружена
+2025-05-18 12:56:32,967 - app - ERROR - Ошибка стартовой инициализации ИИ: name 'EventCategory' is not defined
+2025-05-18 12:56:33,000 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-18 12:56:33,000 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-18 12:56:33,000 - werkzeug - INFO -  * Restarting with stat
+2025-05-18 12:56:35,658 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-albert-small-v2
+2025-05-18 12:56:38,406 - app - INFO - ИИ-модель успешно загружена
+2025-05-18 12:56:38,406 - app - ERROR - Ошибка стартовой инициализации ИИ: name 'EventCategory' is not defined
+2025-05-18 12:56:38,436 - werkzeug - WARNING -  * Debugger is active!
+2025-05-18 12:56:38,438 - werkzeug - INFO -  * Debugger PIN: 829-694-485
+2025-05-18 12:57:12,987 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-albert-small-v2
+2025-05-18 12:57:15,472 - app - INFO - ИИ-модель успешно загружена
+2025-05-18 12:57:15,539 - app - INFO - Обучено 3 категорий
+2025-05-18 12:57:15,539 - app - INFO - ИИ-классификатор успешно инициализирован
+2025-05-18 12:57:15,544 - flask_wtf.csrf - INFO - The CSRF token has expired.
+2025-05-18 12:57:15,555 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 12:57:15] "POST /create_event HTTP/1.1" 200 -
+2025-05-18 12:57:16,566 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 12:57:16] "GET / HTTP/1.1" 200 -
+2025-05-18 12:59:45,668 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 12:59:45] "GET / HTTP/1.1" 200 -
+2025-05-18 12:59:47,240 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 12:59:47] "GET / HTTP/1.1" 200 -
+2025-05-18 12:59:47,987 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 12:59:47] "GET / HTTP/1.1" 200 -
+2025-05-18 12:59:59,561 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 12:59:59] "GET /users HTTP/1.1" 200 -
+2025-05-18 12:59:59,582 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 12:59:59] "[36mGET /static/uploads/avatars/4_sbcf-default-avatar.png HTTP/1.1[0m" 304 -
+2025-05-18 13:00:04,527 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:00:04] "GET /create_event HTTP/1.1" 200 -
+2025-05-18 13:00:05,729 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:00:05] "GET /user/admin HTTP/1.1" 200 -
+2025-05-18 13:00:05,739 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:00:05] "[36mGET /static/uploads/avatars/4_sbcf-default-avatar.png HTTP/1.1[0m" 304 -
+2025-05-18 13:00:11,438 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:00:11] "GET /generate_qr HTTP/1.1" 200 -
+2025-05-18 13:00:13,443 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:00:13] "GET /scan_qr HTTP/1.1" 200 -
+2025-05-18 13:00:19,044 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:00:19] "GET / HTTP/1.1" 200 -
+2025-05-18 13:02:05,271 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:02:05] "GET /create_event HTTP/1.1" 200 -
+2025-05-18 13:02:47,554 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:02:47] "POST /create_event HTTP/1.1" 200 -
+2025-05-18 13:04:15,793 - werkzeug - INFO -  * Detected change in '/home/sonya/PycharmProjects/PythonProject3/app.py', reloading
+2025-05-18 13:04:16,386 - werkzeug - INFO -  * Restarting with stat
+2025-05-18 13:04:19,111 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-albert-small-v2
+2025-05-18 13:04:22,463 - app - INFO - ИИ-модель успешно загружена
+2025-05-18 13:04:22,463 - app - ERROR - Ошибка стартовой инициализации ИИ: name 'EventCategory' is not defined
+2025-05-18 13:04:22,492 - werkzeug - WARNING -  * Debugger is active!
+2025-05-18 13:04:22,494 - werkzeug - INFO -  * Debugger PIN: 829-694-485
+2025-05-18 13:04:30,831 - werkzeug - INFO -  * Detected change in '/home/sonya/PycharmProjects/PythonProject3/app.py', reloading
+2025-05-18 13:04:31,425 - werkzeug - INFO -  * Restarting with stat
+2025-05-18 13:04:34,182 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-albert-small-v2
+2025-05-18 13:04:38,367 - app - INFO - ИИ-модель успешно загружена
+2025-05-18 13:04:38,367 - app - ERROR - Ошибка стартовой инициализации ИИ: name 'EventCategory' is not defined
+2025-05-18 13:04:38,399 - werkzeug - WARNING -  * Debugger is active!
+2025-05-18 13:04:38,400 - werkzeug - INFO -  * Debugger PIN: 829-694-485
+2025-05-18 13:04:52,886 - werkzeug - INFO -  * Detected change in '/home/sonya/PycharmProjects/PythonProject3/app.py', reloading
+2025-05-18 13:04:53,541 - werkzeug - INFO -  * Restarting with stat
+2025-05-18 13:04:56,698 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-albert-small-v2
+2025-05-18 13:04:59,360 - app - INFO - ИИ-модель успешно загружена
+2025-05-18 13:04:59,361 - app - ERROR - Ошибка стартовой инициализации ИИ: name 'EventCategory' is not defined
+2025-05-18 13:04:59,393 - werkzeug - WARNING -  * Debugger is active!
+2025-05-18 13:04:59,395 - werkzeug - INFO -  * Debugger PIN: 829-694-485
+2025-05-18 13:05:11,866 - werkzeug - INFO -  * Detected change in '/home/sonya/PycharmProjects/PythonProject3/app.py', reloading
+2025-05-18 13:05:13,239 - werkzeug - INFO -  * Restarting with stat
+2025-05-18 13:05:17,409 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-albert-small-v2
+2025-05-18 13:05:20,667 - __main__ - INFO - ИИ-модель инициализирована
+2025-05-18 13:05:20,668 - app - ERROR - Ошибка стартовой инициализации ИИ: name 'EventCategory' is not defined
+2025-05-18 13:05:20,696 - werkzeug - WARNING -  * Debugger is active!
+2025-05-18 13:05:20,698 - werkzeug - INFO -  * Debugger PIN: 829-694-485
+2025-05-18 13:05:45,981 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-18 13:05:45,982 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-18 13:05:45,982 - werkzeug - INFO -  * Restarting with stat
+2025-05-18 13:05:48,565 - werkzeug - WARNING -  * Debugger is active!
+2025-05-18 13:05:48,566 - werkzeug - INFO -  * Debugger PIN: 829-694-485
+2025-05-18 13:06:02,434 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-albert-small-v2
+2025-05-18 13:06:04,857 - __main__ - INFO - ИИ-модель инициализирована
+2025-05-18 13:06:04,906 - __main__ - INFO - Обучено категорий: 3
+2025-05-18 13:06:04,923 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:06:04] "GET / HTTP/1.1" 200 -
+2025-05-18 13:06:13,589 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:06:13] "[32mPOST /create_event HTTP/1.1[0m" 302 -
+2025-05-18 13:06:13,594 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:06:13] "GET / HTTP/1.1" 200 -
+2025-05-18 13:08:25,448 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:08:25] "[32mPOST /delete_event/13 HTTP/1.1[0m" 302 -
+2025-05-18 13:08:25,454 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:08:25] "GET / HTTP/1.1" 200 -
+2025-05-18 13:09:04,501 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:09:04] "GET /create_event HTTP/1.1" 200 -
+2025-05-18 13:10:06,072 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:10:06] "[32mPOST /create_event HTTP/1.1[0m" 302 -
+2025-05-18 13:10:06,076 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:10:06] "GET / HTTP/1.1" 200 -
+2025-05-18 13:10:14,789 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:10:14] "[32mPOST /delete_event/33 HTTP/1.1[0m" 302 -
+2025-05-18 13:10:14,807 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:10:14] "GET / HTTP/1.1" 200 -
+2025-05-18 13:10:50,077 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:10:50] "GET /create_event HTTP/1.1" 200 -
+2025-05-18 13:11:51,733 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:11:51] "[32mPOST /create_event HTTP/1.1[0m" 302 -
+2025-05-18 13:11:51,739 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:11:51] "GET / HTTP/1.1" 200 -
+2025-05-18 13:32:43,004 - werkzeug - INFO -  * Detected change in '/home/sonya/PycharmProjects/PythonProject3/app.py', reloading
+2025-05-18 13:32:43,602 - werkzeug - INFO -  * Restarting with stat
+2025-05-18 13:32:46,358 - werkzeug - WARNING -  * Debugger is active!
+2025-05-18 13:32:46,359 - werkzeug - INFO -  * Debugger PIN: 829-694-485
+2025-05-18 13:35:10,446 - werkzeug - INFO -  * Detected change in '/home/sonya/PycharmProjects/PythonProject3/app.py', reloading
+2025-05-18 13:35:11,108 - werkzeug - INFO -  * Restarting with stat
+2025-05-18 13:35:13,885 - werkzeug - WARNING -  * Debugger is active!
+2025-05-18 13:35:13,887 - werkzeug - INFO -  * Debugger PIN: 829-694-485
+2025-05-18 13:35:49,021 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-18 13:35:49,021 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-18 13:35:49,021 - werkzeug - INFO -  * Restarting with stat
+2025-05-18 13:35:52,158 - werkzeug - WARNING -  * Debugger is active!
+2025-05-18 13:35:52,159 - werkzeug - INFO -  * Debugger PIN: 829-694-485
+2025-05-18 13:35:52,630 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-albert-small-v2
+2025-05-18 13:35:55,290 - __main__ - INFO - ИИ-модель инициализирована
+2025-05-18 13:35:55,350 - __main__ - INFO - Обучено категорий: 3
+2025-05-18 13:35:55,366 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:35:55] "GET / HTTP/1.1" 200 -
+2025-05-18 13:36:02,355 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:36:02] "GET / HTTP/1.1" 200 -
+2025-05-18 13:36:03,248 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:36:03] "GET / HTTP/1.1" 200 -
+2025-05-18 13:36:03,869 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:36:03] "GET / HTTP/1.1" 200 -
+2025-05-18 13:36:04,077 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:36:04] "GET / HTTP/1.1" 200 -
+2025-05-18 13:36:04,229 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:36:04] "GET / HTTP/1.1" 200 -
+2025-05-18 13:36:04,408 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:36:04] "GET / HTTP/1.1" 200 -
+2025-05-18 13:36:13,099 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:36:13] "GET / HTTP/1.1" 200 -
+2025-05-18 13:40:12,620 - werkzeug - INFO -  * Detected change in '/home/sonya/PycharmProjects/PythonProject3/app.py', reloading
+2025-05-18 13:40:13,207 - werkzeug - INFO -  * Restarting with stat
+2025-05-18 13:40:15,815 - werkzeug - WARNING -  * Debugger is active!
+2025-05-18 13:40:15,816 - werkzeug - INFO -  * Debugger PIN: 829-694-485
+2025-05-18 13:40:51,867 - werkzeug - INFO -  * Detected change in '/home/sonya/PycharmProjects/PythonProject3/app.py', reloading
+2025-05-18 13:40:52,485 - werkzeug - INFO -  * Restarting with stat
+2025-05-18 13:40:55,109 - werkzeug - WARNING -  * Debugger is active!
+2025-05-18 13:40:55,111 - werkzeug - INFO -  * Debugger PIN: 829-694-485
+2025-05-18 13:41:05,438 - werkzeug - INFO -  * Detected change in '/home/sonya/PycharmProjects/PythonProject3/app.py', reloading
+2025-05-18 13:41:06,096 - werkzeug - INFO -  * Restarting with stat
+2025-05-18 13:41:08,684 - werkzeug - WARNING -  * Debugger is active!
+2025-05-18 13:41:08,686 - werkzeug - INFO -  * Debugger PIN: 829-694-485
+2025-05-18 13:41:23,099 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-18 13:41:23,099 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-18 13:41:23,099 - werkzeug - INFO -  * Restarting with stat
+2025-05-18 13:41:26,372 - werkzeug - WARNING -  * Debugger is active!
+2025-05-18 13:41:26,373 - werkzeug - INFO -  * Debugger PIN: 829-694-485
+2025-05-18 13:41:39,490 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-albert-small-v2
+2025-05-18 13:41:42,652 - __main__ - INFO - ИИ-модель инициализирована
+2025-05-18 13:41:42,724 - __main__ - INFO - Обучено категорий: 5
+2025-05-18 13:41:42,744 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:41:42] "GET / HTTP/1.1" 200 -
+2025-05-18 13:43:06,360 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:43:06] "GET /create_event HTTP/1.1" 200 -
+2025-05-18 13:43:39,215 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:43:39] "[32mPOST /create_event HTTP/1.1[0m" 302 -
+2025-05-18 13:43:39,220 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:43:39] "GET / HTTP/1.1" 200 -
+2025-05-18 13:43:55,096 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:43:55] "GET /create_event HTTP/1.1" 200 -
+2025-05-18 13:44:36,268 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:44:36] "[32mPOST /create_event HTTP/1.1[0m" 302 -
+2025-05-18 13:44:36,275 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:44:36] "GET / HTTP/1.1" 200 -
+2025-05-18 13:44:39,072 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:44:39] "GET /create_event HTTP/1.1" 200 -
+2025-05-18 13:45:29,919 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:45:29] "[32mPOST /create_event HTTP/1.1[0m" 302 -
+2025-05-18 13:45:29,925 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:45:29] "GET / HTTP/1.1" 200 -
+2025-05-18 13:45:33,364 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:45:33] "GET /create_event HTTP/1.1" 200 -
+2025-05-18 13:46:12,780 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:46:12] "[32mPOST /create_event HTTP/1.1[0m" 302 -
+2025-05-18 13:46:12,785 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:46:12] "GET / HTTP/1.1" 200 -
+2025-05-18 13:46:17,601 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:46:17] "GET /create_event HTTP/1.1" 200 -
+2025-05-18 13:47:14,476 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:47:14] "[32mPOST /create_event HTTP/1.1[0m" 302 -
+2025-05-18 13:47:14,482 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:47:14] "GET / HTTP/1.1" 200 -
+2025-05-18 13:49:56,744 - werkzeug - INFO -  * Detected change in '/home/sonya/PycharmProjects/PythonProject3/app.py', reloading
+2025-05-18 13:49:57,350 - werkzeug - INFO -  * Restarting with stat
+2025-05-18 13:49:59,999 - werkzeug - WARNING -  * Debugger is active!
+2025-05-18 13:50:00,001 - werkzeug - INFO -  * Debugger PIN: 829-694-485
+2025-05-18 13:50:29,907 - werkzeug - INFO -  * Detected change in '/home/sonya/PycharmProjects/PythonProject3/app.py', reloading
+2025-05-18 13:50:30,538 - werkzeug - INFO -  * Restarting with stat
+2025-05-18 13:55:35,448 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-18 13:55:35,448 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-18 13:55:35,448 - werkzeug - INFO -  * Restarting with stat
+2025-05-18 13:55:38,017 - werkzeug - WARNING -  * Debugger is active!
+2025-05-18 13:55:38,018 - werkzeug - INFO -  * Debugger PIN: 829-694-485
+2025-05-18 13:55:40,505 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-albert-small-v2
+2025-05-18 13:55:43,763 - __main__ - INFO - ИИ-модель инициализирована
+2025-05-18 13:55:43,870 - __main__ - INFO - Обучено категорий: 5 с улучшенными описаниями
+2025-05-18 13:55:43,885 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:55:43] "GET / HTTP/1.1" 200 -
+2025-05-18 13:55:48,016 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:55:48] "[32mPOST /delete_event/41 HTTP/1.1[0m" 302 -
+2025-05-18 13:55:48,023 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:55:48] "GET / HTTP/1.1" 200 -
+2025-05-18 13:56:16,797 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:56:16] "GET /create_event HTTP/1.1" 200 -
+2025-05-18 13:56:41,291 - __main__ - INFO - Классификация: 'День первокурсника' -> Категория: Искусство (0.76)
+Все оценки: {'Образование': np.float32(0.7), 'Искусство': np.float32(0.76), 'Студенческая жизнь': np.float32(0.73), 'Карьера': np.float32(0.69), 'Развлечения': np.float32(0.66)}
+2025-05-18 13:56:41,299 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:56:41] "[32mPOST /create_event HTTP/1.1[0m" 302 -
+2025-05-18 13:56:41,304 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:56:41] "GET / HTTP/1.1" 200 -
+2025-05-18 13:56:49,599 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:56:49] "GET /create_event HTTP/1.1" 200 -
+2025-05-18 13:57:21,699 - __main__ - INFO - Классификация: 'День первокурсника' -> Категория: Искусство (0.76)
+Все оценки: {'Образование': np.float32(0.7), 'Искусство': np.float32(0.76), 'Студенческая жизнь': np.float32(0.73), 'Карьера': np.float32(0.69), 'Развлечения': np.float32(0.66)}
+2025-05-18 13:57:21,706 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:57:21] "[32mPOST /create_event HTTP/1.1[0m" 302 -
+2025-05-18 13:57:21,711 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:57:21] "GET / HTTP/1.1" 200 -
+2025-05-18 13:57:25,778 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:57:25] "[32mPOST /delete_event/41 HTTP/1.1[0m" 302 -
+2025-05-18 13:57:25,783 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:57:25] "GET / HTTP/1.1" 200 -
+2025-05-18 13:58:39,195 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:58:39] "GET /create_event HTTP/1.1" 200 -
+2025-05-18 13:59:27,512 - __main__ - INFO - Классификация: 'Квест "В поисках студенческого сокровища" ' -> Категория: Искусство (0.70)
+Все оценки: {'Образование': np.float32(0.63), 'Искусство': np.float32(0.7), 'Студенческая жизнь': np.float32(0.66), 'Карьера': np.float32(0.61), 'Развлечения': np.float32(0.59)}
+2025-05-18 13:59:27,519 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:59:27] "[32mPOST /create_event HTTP/1.1[0m" 302 -
+2025-05-18 13:59:27,524 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 13:59:27] "GET / HTTP/1.1" 200 -
+2025-05-18 14:02:57,163 - werkzeug - INFO -  * Detected change in '/home/sonya/PycharmProjects/PythonProject3/app.py', reloading
+2025-05-18 14:02:57,751 - werkzeug - INFO -  * Restarting with stat
+2025-05-18 14:03:00,547 - werkzeug - WARNING -  * Debugger is active!
+2025-05-18 14:03:00,548 - werkzeug - INFO -  * Debugger PIN: 829-694-485
+2025-05-18 14:03:14,974 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-18 14:03:14,975 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-18 14:03:14,975 - werkzeug - INFO -  * Restarting with stat
+2025-05-18 14:03:17,697 - werkzeug - WARNING -  * Debugger is active!
+2025-05-18 14:03:17,698 - werkzeug - INFO -  * Debugger PIN: 829-694-485
+2025-05-18 14:03:20,083 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-albert-small-v2
+2025-05-18 14:03:22,942 - __main__ - INFO - ИИ-модель инициализирована
+2025-05-18 14:03:23,126 - __main__ - INFO - Обучено категорий: 5 с улучшенными различиями
+2025-05-18 14:03:23,149 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:03:23] "GET / HTTP/1.1" 200 -
+2025-05-18 14:03:26,440 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:03:26] "[32mPOST /delete_event/42 HTTP/1.1[0m" 302 -
+2025-05-18 14:03:26,445 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:03:26] "GET / HTTP/1.1" 200 -
+2025-05-18 14:03:28,549 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:03:28] "GET /create_event HTTP/1.1" 200 -
+2025-05-18 14:03:58,856 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:03:58] "[32mPOST /create_event HTTP/1.1[0m" 302 -
+2025-05-18 14:03:58,862 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:03:58] "GET / HTTP/1.1" 200 -
+2025-05-18 14:04:21,100 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:04:21] "[32mPOST /delete_event/43 HTTP/1.1[0m" 302 -
+2025-05-18 14:04:21,106 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:04:21] "GET / HTTP/1.1" 200 -
+2025-05-18 14:04:22,603 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:04:22] "GET /create_event HTTP/1.1" 200 -
+2025-05-18 14:04:41,619 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:04:41] "GET / HTTP/1.1" 200 -
+2025-05-18 14:05:29,841 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:05:29] "[32mPOST /create_event HTTP/1.1[0m" 302 -
+2025-05-18 14:05:29,847 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:05:29] "GET / HTTP/1.1" 200 -
+2025-05-18 14:05:41,211 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:05:41] "[32mPOST /delete_event/34 HTTP/1.1[0m" 302 -
+2025-05-18 14:05:41,217 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:05:41] "GET / HTTP/1.1" 200 -
+2025-05-18 14:05:43,482 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:05:43] "GET /create_event HTTP/1.1" 200 -
+2025-05-18 14:06:25,396 - __main__ - INFO - Классификация: 'Конференция по искусственному интеллекту и машинному обучению' -> Категория: Искусство (Оценки: {'Образование': np.float32(0.67), 'Искусство': np.float32(0.7), 'Студенческая жизнь': np.float32(0.64), 'Карьера': np.float32(0.66), 'Развлечения': np.float32(0.55)}
+2025-05-18 14:06:25,403 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:06:25] "[32mPOST /create_event HTTP/1.1[0m" 302 -
+2025-05-18 14:06:25,408 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:06:25] "GET / HTTP/1.1" 200 -
+2025-05-18 14:06:48,716 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:06:48] "[32mPOST /delete_event/46 HTTP/1.1[0m" 302 -
+2025-05-18 14:06:48,721 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:06:48] "GET / HTTP/1.1" 200 -
+2025-05-18 14:07:32,022 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:07:32] "GET /create_event HTTP/1.1" 200 -
+2025-05-18 14:08:08,586 - __main__ - INFO - Классификация: 'Семинар "Тайм-менеджмент для студентов"' -> Категория: Образование (Оценки: {'Образование': np.float32(0.67), 'Искусство': np.float32(0.66), 'Студенческая жизнь': np.float32(0.6), 'Карьера': np.float32(0.61), 'Развлечения': np.float32(0.51)}
+2025-05-18 14:08:08,592 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:08:08] "[32mPOST /create_event HTTP/1.1[0m" 302 -
+2025-05-18 14:08:08,597 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:08:08] "GET / HTTP/1.1" 200 -
+2025-05-18 14:08:29,300 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:08:29] "GET /create_event HTTP/1.1" 200 -
+2025-05-18 14:09:05,232 - __main__ - INFO - Классификация: 'Турнир по киберспорту' -> Категория: Искусство (Оценки: {'Образование': np.float32(0.7), 'Искусство': np.float32(0.75), 'Студенческая жизнь': np.float32(0.67), 'Карьера': np.float32(0.69), 'Развлечения': np.float32(0.58)}
+2025-05-18 14:09:05,238 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:09:05] "[32mPOST /create_event HTTP/1.1[0m" 302 -
+2025-05-18 14:09:05,243 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:09:05] "GET / HTTP/1.1" 200 -
+2025-05-18 14:09:23,253 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:09:23] "[32mPOST /delete_event/47 HTTP/1.1[0m" 302 -
+2025-05-18 14:09:23,257 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:09:23] "GET / HTTP/1.1" 200 -
+2025-05-18 14:09:24,797 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:09:24] "GET /create_event HTTP/1.1" 200 -
+2025-05-18 14:10:10,613 - __main__ - INFO - Классификация: 'Семинар "Цифровая грамотность"' -> Категория: Искусство (Оценки: {'Образование': np.float32(0.67), 'Искусство': np.float32(0.71), 'Студенческая жизнь': np.float32(0.64), 'Карьера': np.float32(0.66), 'Развлечения': np.float32(0.55)}
+2025-05-18 14:10:10,620 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:10:10] "[32mPOST /create_event HTTP/1.1[0m" 302 -
+2025-05-18 14:10:10,626 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:10:10] "GET / HTTP/1.1" 200 -
+2025-05-18 14:10:16,354 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:10:16] "[32mPOST /delete_event/47 HTTP/1.1[0m" 302 -
+2025-05-18 14:10:16,363 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:10:16] "GET / HTTP/1.1" 200 -
+2025-05-18 14:10:17,541 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:10:17] "GET /create_event HTTP/1.1" 200 -
+2025-05-18 14:11:01,184 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:11:01] "[32mPOST /create_event HTTP/1.1[0m" 302 -
+2025-05-18 14:11:01,191 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:11:01] "GET / HTTP/1.1" 200 -
+2025-05-18 14:12:26,725 - werkzeug - INFO -  * Detected change in '/home/sonya/PycharmProjects/PythonProject3/app.py', reloading
+2025-05-18 14:12:27,289 - werkzeug - INFO -  * Restarting with stat
+2025-05-18 14:12:30,084 - werkzeug - WARNING -  * Debugger is active!
+2025-05-18 14:12:30,086 - werkzeug - INFO -  * Debugger PIN: 829-694-485
+2025-05-18 14:12:48,733 - werkzeug - INFO -  * Detected change in '/home/sonya/PycharmProjects/PythonProject3/app.py', reloading
+2025-05-18 14:12:49,320 - werkzeug - INFO -  * Restarting with stat
+2025-05-18 14:17:38,880 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-18 14:17:38,880 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-18 14:17:38,881 - werkzeug - INFO -  * Restarting with stat
+2025-05-18 14:17:41,373 - werkzeug - WARNING -  * Debugger is active!
+2025-05-18 14:17:41,375 - werkzeug - INFO -  * Debugger PIN: 829-694-485
+2025-05-18 14:17:52,524 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-albert-small-v2
+2025-05-18 14:17:55,610 - __main__ - INFO - ИИ-модель инициализирована
+2025-05-18 14:17:55,767 - __main__ - INFO - Модель переобучена с акцентом на карьерные мероприятия
+2025-05-18 14:17:55,786 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:17:55] "GET / HTTP/1.1" 200 -
+2025-05-18 14:18:02,308 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:18:02] "[32mPOST /delete_event/47 HTTP/1.1[0m" 302 -
+2025-05-18 14:18:02,313 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:18:02] "GET / HTTP/1.1" 200 -
+2025-05-18 14:18:03,439 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:18:03] "GET /create_event HTTP/1.1" 200 -
+2025-05-18 14:18:34,042 - __main__ - INFO - Приоритетная категория 'Карьера' для 'Ярмарка вакансий "Старт карьеры"'
+2025-05-18 14:18:34,048 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:18:34] "[32mPOST /create_event HTTP/1.1[0m" 302 -
+2025-05-18 14:18:34,053 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:18:34] "GET / HTTP/1.1" 200 -
+2025-05-18 14:18:50,677 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:18:50] "GET /create_event HTTP/1.1" 200 -
+2025-05-18 14:19:53,180 - __main__ - INFO - Приоритетная категория 'Карьера' для 'Встреча с HR-экспертами'
+2025-05-18 14:19:53,185 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:19:53] "[32mPOST /create_event HTTP/1.1[0m" 302 -
+2025-05-18 14:19:53,191 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:19:53] "GET / HTTP/1.1" 200 -
+2025-05-18 14:19:57,556 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:19:57] "GET /create_event HTTP/1.1" 200 -
+2025-05-18 14:20:37,594 - __main__ - INFO - Приоритетная категория 'Карьера' для 'Мастер-класс "Создание идеального резюме"'
+2025-05-18 14:20:37,600 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:20:37] "[32mPOST /create_event HTTP/1.1[0m" 302 -
+2025-05-18 14:20:37,607 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:20:37] "GET / HTTP/1.1" 200 -
+2025-05-18 14:20:42,208 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:20:42] "GET /create_event HTTP/1.1" 200 -
+2025-05-18 14:21:21,167 - __main__ - INFO - Приоритетная категория 'Карьера' для 'Тренинг "Собеседование на 5+"'
+2025-05-18 14:21:21,174 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:21:21] "[32mPOST /create_event HTTP/1.1[0m" 302 -
+2025-05-18 14:21:21,179 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:21:21] "GET / HTTP/1.1" 200 -
+2025-05-18 14:21:45,527 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:21:45] "GET /create_event HTTP/1.1" 200 -
+2025-05-18 14:22:28,538 - __main__ - INFO - Классификация: 'Кинопоказ под открытым небом'
+Описание: 'Вечерний просмотр классики мирового кинематографа в неформальной обстановке'
+Результат: Искусство (0.73)
+Все оценки: {'Образование': np.float32(0.69), 'Искусство': np.float32(0.73), 'Студенческая жизнь': np.float32(0.73), 'Карьера': np.float32(0.65), 'Развлечения': np.float32(0.58)}
+2025-05-18 14:22:28,545 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:22:28] "[32mPOST /create_event HTTP/1.1[0m" 302 -
+2025-05-18 14:22:28,549 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:22:28] "GET / HTTP/1.1" 200 -
+2025-05-18 14:22:41,787 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:22:41] "GET /create_event HTTP/1.1" 200 -
+2025-05-18 14:23:39,937 - __main__ - INFO - Классификация: 'КВН'
+Описание: 'Выступления начинающих и опытных комиков с юмористическими монологами'
+Результат: Искусство (0.74)
+Все оценки: {'Образование': np.float32(0.69), 'Искусство': np.float32(0.74), 'Студенческая жизнь': np.float32(0.73), 'Карьера': np.float32(0.66), 'Развлечения': np.float32(0.59)}
+2025-05-18 14:23:39,943 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:23:39] "[32mPOST /create_event HTTP/1.1[0m" 302 -
+2025-05-18 14:23:39,948 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:23:39] "GET / HTTP/1.1" 200 -
+2025-05-18 14:23:45,102 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:23:45] "[32mPOST /delete_event/52 HTTP/1.1[0m" 302 -
+2025-05-18 14:23:45,108 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:23:45] "GET / HTTP/1.1" 200 -
+2025-05-18 14:24:05,372 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:24:05] "GET /create_event HTTP/1.1" 200 -
+2025-05-18 14:24:30,675 - __main__ - INFO - Классификация: 'Семинар "Тайм-менеджмент для студентов"'
+Описание: 'Практические советы по эффективной организации учебного процесса'
+Результат: Образование (0.70)
+Все оценки: {'Образование': np.float32(0.7), 'Искусство': np.float32(0.65), 'Студенческая жизнь': np.float32(0.67), 'Карьера': np.float32(0.58), 'Развлечения': np.float32(0.51)}
+2025-05-18 14:24:30,681 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:24:30] "[32mPOST /create_event HTTP/1.1[0m" 302 -
+2025-05-18 14:24:30,687 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:24:30] "GET / HTTP/1.1" 200 -
+2025-05-18 14:24:46,635 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:24:46] "[32mPOST /delete_event/52 HTTP/1.1[0m" 302 -
+2025-05-18 14:24:46,645 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:24:46] "GET / HTTP/1.1" 200 -
+2025-05-18 14:28:45,785 - werkzeug - INFO -  * Detected change in '/home/sonya/PycharmProjects/PythonProject3/app.py', reloading
+2025-05-18 14:28:46,376 - werkzeug - INFO -  * Restarting with stat
+2025-05-18 14:28:49,065 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-05-18 14:28:52,839 - werkzeug - WARNING -  * Debugger is active!
+2025-05-18 14:28:52,840 - werkzeug - INFO -  * Debugger PIN: 829-694-485
+2025-05-18 14:29:14,466 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-05-18 14:29:18,649 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-18 14:29:18,650 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-18 14:29:18,650 - werkzeug - INFO -  * Restarting with stat
+2025-05-18 14:29:21,541 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-05-18 14:29:23,269 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-05-18 14:29:24,680 - werkzeug - WARNING -  * Debugger is active!
+2025-05-18 14:29:24,681 - werkzeug - INFO -  * Debugger PIN: 829-694-485
+2025-05-18 14:29:39,396 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-05-18 14:29:42,508 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-18 14:29:42,508 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-18 14:29:42,509 - werkzeug - INFO -  * Restarting with stat
+2025-05-18 14:29:44,986 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-05-18 14:29:50,395 - werkzeug - WARNING -  * Debugger is active!
+2025-05-18 14:29:50,396 - werkzeug - INFO -  * Debugger PIN: 829-694-485
+2025-05-18 14:29:50,428 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:29:50] "[35m[1mGET /create_event HTTP/1.1[0m" 500 -
+2025-05-18 14:29:50,445 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:29:50] "[36mGET /create_event?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-18 14:29:50,447 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:29:50] "[36mGET /create_event?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-18 14:29:50,456 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:29:50] "GET /create_event?__debugger__=yes&cmd=resource&f=console.png&s=NvFriVanUDjF4ePYudnG HTTP/1.1" 200 -
+2025-05-18 14:29:50,477 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:29:50] "[36mGET /create_event?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-18 14:30:09,021 - werkzeug - INFO -  * Detected change in '/home/sonya/PycharmProjects/PythonProject3/app.py', reloading
+2025-05-18 14:30:09,600 - werkzeug - INFO -  * Restarting with stat
+2025-05-18 14:30:12,242 - werkzeug - WARNING -  * Debugger is active!
+2025-05-18 14:30:12,243 - werkzeug - INFO -  * Debugger PIN: 829-694-485
+2025-05-18 14:54:57,576 - werkzeug - INFO -  * Detected change in '/home/sonya/PycharmProjects/PythonProject3/app.py', reloading
+2025-05-18 14:54:58,249 - werkzeug - INFO -  * Restarting with stat
+2025-05-18 14:55:01,098 - werkzeug - WARNING -  * Debugger is active!
+2025-05-18 14:55:01,099 - werkzeug - INFO -  * Debugger PIN: 829-694-485
+2025-05-18 14:55:18,363 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-18 14:55:18,363 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-18 14:55:18,364 - werkzeug - INFO -  * Restarting with stat
+2025-05-18 14:55:21,110 - werkzeug - WARNING -  * Debugger is active!
+2025-05-18 14:55:21,111 - werkzeug - INFO -  * Debugger PIN: 829-694-485
+2025-05-18 14:55:21,136 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-albert-small-v2
+2025-05-18 14:55:24,104 - __main__ - INFO - ИИ-модель инициализирована
+2025-05-18 14:55:24,706 - __main__ - INFO - Модель переобучена с акцентом на развлечения и студенческую жизнь
+2025-05-18 14:55:24,735 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:55:24] "GET / HTTP/1.1" 200 -
+2025-05-18 14:55:32,027 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:55:32] "[32mPOST /delete_event/51 HTTP/1.1[0m" 302 -
+2025-05-18 14:55:32,032 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:55:32] "GET / HTTP/1.1" 200 -
+2025-05-18 14:55:33,154 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:55:33] "GET /create_event HTTP/1.1" 200 -
+2025-05-18 14:57:24,629 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:57:24] "[32mPOST /create_event HTTP/1.1[0m" 302 -
+2025-05-18 14:57:24,636 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:57:24] "GET / HTTP/1.1" 200 -
+2025-05-18 14:57:35,069 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:57:35] "GET /create_event HTTP/1.1" 200 -
+2025-05-18 14:58:11,563 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:58:11] "[32mPOST /create_event HTTP/1.1[0m" 302 -
+2025-05-18 14:58:11,568 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:58:11] "GET / HTTP/1.1" 200 -
+2025-05-18 14:58:19,347 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:58:19] "GET /create_event HTTP/1.1" 200 -
+2025-05-18 14:59:07,372 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:59:07] "GET / HTTP/1.1" 200 -
+2025-05-18 14:59:59,816 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 14:59:59] "GET /create_event HTTP/1.1" 200 -
+2025-05-18 15:00:27,462 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:00:27] "[32mPOST /create_event HTTP/1.1[0m" 302 -
+2025-05-18 15:00:27,469 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:00:27] "GET / HTTP/1.1" 200 -
+2025-05-18 15:00:36,412 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:00:36] "GET /create_event HTTP/1.1" 200 -
+2025-05-18 15:01:21,029 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:01:21] "[32mPOST /create_event HTTP/1.1[0m" 302 -
+2025-05-18 15:01:21,034 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:01:21] "GET / HTTP/1.1" 200 -
+2025-05-18 15:01:35,914 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:01:35] "GET /create_event HTTP/1.1" 200 -
+2025-05-18 15:02:13,806 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:02:13] "[32mPOST /create_event HTTP/1.1[0m" 302 -
+2025-05-18 15:02:13,814 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:02:13] "GET / HTTP/1.1" 200 -
+2025-05-18 15:02:36,669 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:02:36] "[32mPOST /delete_event/55 HTTP/1.1[0m" 302 -
+2025-05-18 15:02:36,676 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:02:36] "GET / HTTP/1.1" 200 -
+2025-05-18 15:02:38,851 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:02:38] "GET /create_event HTTP/1.1" 200 -
+2025-05-18 15:03:21,975 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:03:21] "[32mPOST /create_event HTTP/1.1[0m" 302 -
+2025-05-18 15:03:21,982 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:03:21] "GET / HTTP/1.1" 200 -
+2025-05-18 15:03:29,340 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:03:29] "[32mPOST /delete_event/55 HTTP/1.1[0m" 302 -
+2025-05-18 15:03:29,345 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:03:29] "GET / HTTP/1.1" 200 -
+2025-05-18 15:03:30,711 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:03:30] "GET /create_event HTTP/1.1" 200 -
+2025-05-18 15:05:04,218 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:05:04] "[32mPOST /create_event HTTP/1.1[0m" 302 -
+2025-05-18 15:05:04,224 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:05:04] "GET / HTTP/1.1" 200 -
+2025-05-18 15:05:10,810 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:05:10] "[32mPOST /delete_event/55 HTTP/1.1[0m" 302 -
+2025-05-18 15:05:10,816 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:05:10] "GET / HTTP/1.1" 200 -
+2025-05-18 15:05:12,037 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:05:12] "GET /create_event HTTP/1.1" 200 -
+2025-05-18 15:07:06,350 - werkzeug - INFO -  * Detected change in '/home/sonya/PycharmProjects/PythonProject3/app.py', reloading
+2025-05-18 15:07:07,035 - werkzeug - INFO -  * Restarting with stat
+2025-05-18 15:07:09,751 - werkzeug - WARNING -  * Debugger is active!
+2025-05-18 15:07:09,753 - werkzeug - INFO -  * Debugger PIN: 829-694-485
+2025-05-18 15:10:58,270 - werkzeug - INFO -  * Detected change in '/home/sonya/PycharmProjects/PythonProject3/app.py', reloading
+2025-05-18 15:10:58,874 - werkzeug - INFO -  * Restarting with stat
+2025-05-18 15:11:01,551 - werkzeug - WARNING -  * Debugger is active!
+2025-05-18 15:11:01,553 - werkzeug - INFO -  * Debugger PIN: 829-694-485
+2025-05-18 15:13:15,594 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-18 15:13:15,595 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-18 15:13:15,595 - werkzeug - INFO -  * Restarting with stat
+2025-05-18 15:13:18,206 - werkzeug - WARNING -  * Debugger is active!
+2025-05-18 15:13:18,208 - werkzeug - INFO -  * Debugger PIN: 829-694-485
+2025-05-18 15:13:20,295 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-albert-small-v2
+2025-05-18 15:13:22,979 - __main__ - INFO - ИИ-модель инициализирована
+2025-05-18 15:13:23,113 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-albert-small-v2
+2025-05-18 15:13:23,185 - __main__ - INFO - Модель переобучена с четким разделением фестивалей
+2025-05-18 15:13:23,197 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:13:23] "GET /create_event HTTP/1.1" 200 -
+2025-05-18 15:13:25,459 - __main__ - INFO - ИИ-модель инициализирована
+2025-05-18 15:13:25,632 - __main__ - INFO - Модель переобучена с четким разделением фестивалей
+2025-05-18 15:13:25,647 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:13:25] "GET / HTTP/1.1" 200 -
+2025-05-18 15:13:28,638 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:13:28] "GET /create_event HTTP/1.1" 200 -
+2025-05-18 15:14:03,063 - __main__ - INFO - Приоритетная категория 'Развлечения' для 'Фестиваль воздушных шаров'
+2025-05-18 15:14:03,070 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:14:03] "[32mPOST /create_event HTTP/1.1[0m" 302 -
+2025-05-18 15:14:03,077 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:14:03] "GET / HTTP/1.1" 200 -
+2025-05-18 15:14:26,165 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:14:26] "GET /create_event HTTP/1.1" 200 -
+2025-05-18 15:15:04,641 - __main__ - INFO - Приоритетная категория 'Развлечения' для 'Международный фестиваль фейерверков'
+2025-05-18 15:15:04,646 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:15:04] "[32mPOST /create_event HTTP/1.1[0m" 302 -
+2025-05-18 15:15:04,652 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:15:04] "GET / HTTP/1.1" 200 -
+2025-05-18 15:15:11,467 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:15:11] "GET /create_event HTTP/1.1" 200 -
+2025-05-18 15:15:58,673 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:15:58] "[32mPOST /create_event HTTP/1.1[0m" 302 -
+2025-05-18 15:15:58,679 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:15:58] "GET / HTTP/1.1" 200 -
+2025-05-18 15:16:15,276 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:16:15] "[32mPOST /delete_event/57 HTTP/1.1[0m" 302 -
+2025-05-18 15:16:15,288 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:16:15] "GET / HTTP/1.1" 200 -
+2025-05-18 15:16:18,098 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:16:18] "GET /create_event HTTP/1.1" 200 -
+2025-05-18 15:18:57,527 - werkzeug - INFO -  * Detected change in '/home/sonya/PycharmProjects/PythonProject3/app.py', reloading
+2025-05-18 15:18:58,177 - werkzeug - INFO -  * Restarting with stat
+2025-05-18 15:19:00,846 - werkzeug - WARNING -  * Debugger is active!
+2025-05-18 15:19:00,847 - werkzeug - INFO -  * Debugger PIN: 829-694-485
+2025-05-18 15:19:33,391 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-albert-small-v2
+2025-05-18 15:19:36,289 - __main__ - INFO - ИИ-модель инициализирована
+2025-05-18 15:19:36,499 - __main__ - INFO - Модель переобучена с четким разделением фестивалей
+2025-05-18 15:19:36,504 - __main__ - INFO - Определена категория 'Развлечения' по ключевым словам для: 'Квест-игра по городу '
+2025-05-18 15:19:36,515 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:19:36] "[32mPOST /create_event HTTP/1.1[0m" 302 -
+2025-05-18 15:19:36,531 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:19:36] "GET / HTTP/1.1" 200 -
+2025-05-18 15:20:09,453 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:20:09] "GET / HTTP/1.1" 200 -
+2025-05-18 15:20:12,219 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:20:12] "GET /create_event HTTP/1.1" 200 -
+2025-05-18 15:20:40,447 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:20:40] "[32mPOST /create_event HTTP/1.1[0m" 302 -
+2025-05-18 15:20:40,453 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:20:40] "GET / HTTP/1.1" 200 -
+2025-05-18 15:20:47,479 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:20:47] "GET /create_event HTTP/1.1" 200 -
+2025-05-18 15:20:52,995 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:20:52] "[32mPOST /delete_event/4 HTTP/1.1[0m" 302 -
+2025-05-18 15:20:53,001 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:20:53] "GET / HTTP/1.1" 200 -
+2025-05-18 15:21:23,027 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:21:23] "[32mPOST /create_event HTTP/1.1[0m" 302 -
+2025-05-18 15:21:23,033 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:21:23] "GET / HTTP/1.1" 200 -
+2025-05-18 15:21:30,699 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:21:30] "GET /create_event HTTP/1.1" 200 -
+2025-05-18 15:21:35,650 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:21:35] "[32mPOST /delete_event/5 HTTP/1.1[0m" 302 -
+2025-05-18 15:21:35,655 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:21:35] "GET / HTTP/1.1" 200 -
+2025-05-18 15:21:47,197 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:21:47] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-05-18 15:21:47,206 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:21:47] "GET / HTTP/1.1" 200 -
+2025-05-18 15:21:49,460 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:21:49] "GET /login HTTP/1.1" 200 -
+2025-05-18 15:21:57,874 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:21:57] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-05-18 15:21:57,890 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:21:57] "GET / HTTP/1.1" 200 -
+2025-05-18 15:22:02,396 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:22:02] "GET /create_event HTTP/1.1" 200 -
+2025-05-18 15:22:33,848 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:22:33] "[32mPOST /create_event HTTP/1.1[0m" 302 -
+2025-05-18 15:22:33,855 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:22:33] "GET / HTTP/1.1" 200 -
+2025-05-18 15:22:35,096 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:22:35] "GET /create_event HTTP/1.1" 200 -
+2025-05-18 15:23:06,533 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:23:06] "[32mPOST /create_event HTTP/1.1[0m" 302 -
+2025-05-18 15:23:06,538 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:23:06] "GET / HTTP/1.1" 200 -
+2025-05-18 15:23:33,399 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:23:33] "GET /create_event HTTP/1.1" 200 -
+2025-05-18 15:24:06,615 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:24:06] "[32mPOST /create_event HTTP/1.1[0m" 302 -
+2025-05-18 15:24:06,622 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:24:06] "GET / HTTP/1.1" 200 -
+2025-05-18 15:24:59,242 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:24:59] "GET /create_event HTTP/1.1" 200 -
+2025-05-18 15:25:49,825 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:25:49] "[32mPOST /create_event HTTP/1.1[0m" 302 -
+2025-05-18 15:25:49,831 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:25:49] "GET / HTTP/1.1" 200 -
+2025-05-18 15:26:40,025 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:26:40] "GET /create_event HTTP/1.1" 200 -
+2025-05-18 15:27:02,234 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:27:02] "[32mPOST /create_event HTTP/1.1[0m" 302 -
+2025-05-18 15:27:02,240 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:27:02] "GET / HTTP/1.1" 200 -
+2025-05-18 15:27:47,020 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:27:47] "[31m[1mPOST /delete_event/14 HTTP/1.1[0m" 403 -
+2025-05-18 15:27:53,632 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:27:53] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-05-18 15:27:53,639 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:27:53] "GET / HTTP/1.1" 200 -
+2025-05-18 15:27:55,547 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:27:55] "GET /login HTTP/1.1" 200 -
+2025-05-18 15:28:05,104 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:28:05] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-05-18 15:28:05,110 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:28:05] "GET / HTTP/1.1" 200 -
+2025-05-18 15:28:18,631 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:28:18] "[32mPOST /delete_event/14 HTTP/1.1[0m" 302 -
+2025-05-18 15:28:18,637 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:28:18] "GET / HTTP/1.1" 200 -
+2025-05-18 15:28:24,464 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:28:24] "[32mPOST /delete_event/7 HTTP/1.1[0m" 302 -
+2025-05-18 15:28:24,471 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:28:24] "GET / HTTP/1.1" 200 -
+2025-05-18 15:28:30,672 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:28:30] "[32mPOST /delete_event/16 HTTP/1.1[0m" 302 -
+2025-05-18 15:28:30,678 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:28:30] "GET / HTTP/1.1" 200 -
+2025-05-18 15:28:36,781 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:28:36] "[32mPOST /delete_event/10 HTTP/1.1[0m" 302 -
+2025-05-18 15:28:36,788 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:28:36] "GET / HTTP/1.1" 200 -
+2025-05-18 15:28:42,669 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:28:42] "[32mPOST /delete_event/9 HTTP/1.1[0m" 302 -
+2025-05-18 15:28:42,674 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:28:42] "GET / HTTP/1.1" 200 -
+2025-05-18 15:28:48,867 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:28:48] "[32mPOST /delete_event/21 HTTP/1.1[0m" 302 -
+2025-05-18 15:28:48,872 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:28:48] "GET / HTTP/1.1" 200 -
+2025-05-18 15:28:55,699 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:28:55] "[32mPOST /delete_event/18 HTTP/1.1[0m" 302 -
+2025-05-18 15:28:55,705 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:28:55] "GET / HTTP/1.1" 200 -
+2025-05-18 15:29:02,810 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:29:02] "[32mPOST /delete_event/15 HTTP/1.1[0m" 302 -
+2025-05-18 15:29:02,818 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:29:02] "GET / HTTP/1.1" 200 -
+2025-05-18 15:29:08,848 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:29:08] "[32mPOST /delete_event/27 HTTP/1.1[0m" 302 -
+2025-05-18 15:29:08,854 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:29:08] "GET / HTTP/1.1" 200 -
+2025-05-18 15:29:14,397 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:29:14] "[32mPOST /delete_event/20 HTTP/1.1[0m" 302 -
+2025-05-18 15:29:14,402 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:29:14] "GET / HTTP/1.1" 200 -
+2025-05-18 15:29:20,034 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:29:20] "[32mPOST /delete_event/11 HTTP/1.1[0m" 302 -
+2025-05-18 15:29:20,039 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:29:20] "GET / HTTP/1.1" 200 -
+2025-05-18 15:29:26,669 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:29:26] "[32mPOST /delete_event/19 HTTP/1.1[0m" 302 -
+2025-05-18 15:29:26,676 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:29:26] "GET / HTTP/1.1" 200 -
+2025-05-18 15:29:33,365 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:29:33] "[32mPOST /delete_event/12 HTTP/1.1[0m" 302 -
+2025-05-18 15:29:33,370 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:29:33] "GET / HTTP/1.1" 200 -
+2025-05-18 15:29:38,622 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:29:38] "[32mPOST /delete_event/26 HTTP/1.1[0m" 302 -
+2025-05-18 15:29:38,630 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:29:38] "GET / HTTP/1.1" 200 -
+2025-05-18 15:30:00,663 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:30:00] "[32mPOST /delete_event/63 HTTP/1.1[0m" 302 -
+2025-05-18 15:30:00,668 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:30:00] "GET / HTTP/1.1" 200 -
+2025-05-18 15:30:06,547 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:30:06] "[32mPOST /delete_event/58 HTTP/1.1[0m" 302 -
+2025-05-18 15:30:06,552 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:30:06] "GET / HTTP/1.1" 200 -
+2025-05-18 15:30:35,384 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:30:35] "[32mPOST /delete_event/64 HTTP/1.1[0m" 302 -
+2025-05-18 15:30:35,390 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:30:35] "GET / HTTP/1.1" 200 -
+2025-05-18 15:30:44,466 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:30:44] "[32mPOST /delete_event/61 HTTP/1.1[0m" 302 -
+2025-05-18 15:30:44,471 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:30:44] "GET / HTTP/1.1" 200 -
+2025-05-18 15:31:15,940 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:31:15] "GET /users HTTP/1.1" 200 -
+2025-05-18 15:31:15,959 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:31:15] "[36mGET /static/uploads/avatars/4_sbcf-default-avatar.png HTTP/1.1[0m" 304 -
+2025-05-18 15:31:21,560 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:31:21] "GET / HTTP/1.1" 200 -
+2025-05-18 15:31:24,876 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:31:24] "GET /create_event HTTP/1.1" 200 -
+2025-05-18 15:31:28,115 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:31:28] "GET /users HTTP/1.1" 200 -
+2025-05-18 15:31:28,142 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:31:28] "[36mGET /static/uploads/avatars/4_sbcf-default-avatar.png HTTP/1.1[0m" 304 -
+2025-05-18 15:31:32,925 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:31:32] "GET /user/example HTTP/1.1" 200 -
+2025-05-18 15:31:38,562 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:31:38] "GET /rate_user/example HTTP/1.1" 200 -
+2025-05-18 15:31:41,132 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:31:41] "[32mPOST /rate_user/example HTTP/1.1[0m" 302 -
+2025-05-18 15:31:41,142 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:31:41] "GET /user/example HTTP/1.1" 200 -
+2025-05-18 15:31:46,707 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:31:46] "GET / HTTP/1.1" 200 -
+2025-05-18 15:31:51,049 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:31:51] "GET /create_event HTTP/1.1" 200 -
+2025-05-18 15:31:51,967 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:31:51] "GET /user/admin HTTP/1.1" 200 -
+2025-05-18 15:31:51,982 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:31:51] "[36mGET /static/uploads/avatars/4_sbcf-default-avatar.png HTTP/1.1[0m" 304 -
+2025-05-18 15:31:56,022 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:31:56] "GET /user/admin HTTP/1.1" 200 -
+2025-05-18 15:31:56,034 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:31:56] "[36mGET /static/uploads/avatars/4_sbcf-default-avatar.png HTTP/1.1[0m" 304 -
+2025-05-18 15:31:58,363 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:31:58] "GET /generate_qr HTTP/1.1" 200 -
+2025-05-18 15:31:59,932 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:31:59] "GET /scan_qr HTTP/1.1" 200 -
+2025-05-18 15:32:01,558 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:32:01] "GET / HTTP/1.1" 200 -
+2025-05-18 15:32:07,221 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:32:07] "GET /users HTTP/1.1" 200 -
+2025-05-18 15:32:07,235 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:32:07] "[36mGET /static/uploads/avatars/4_sbcf-default-avatar.png HTTP/1.1[0m" 304 -
+2025-05-18 15:33:21,722 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:33:21] "GET / HTTP/1.1" 200 -
+2025-05-18 15:33:55,160 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:33:55] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-05-18 15:33:55,169 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:33:55] "GET / HTTP/1.1" 200 -
+2025-05-18 15:40:45,684 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:40:45] "GET / HTTP/1.1" 200 -
+2025-05-18 15:40:49,451 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:40:49] "GET /login HTTP/1.1" 200 -
+2025-05-18 15:41:03,003 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:41:03] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-05-18 15:41:03,009 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:41:03] "GET / HTTP/1.1" 200 -
+2025-05-18 15:41:51,619 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:41:51] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-05-18 15:41:51,625 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:41:51] "GET / HTTP/1.1" 200 -
+2025-05-18 15:41:53,080 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:41:53] "GET /login HTTP/1.1" 200 -
+2025-05-18 15:41:59,795 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:41:59] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-05-18 15:41:59,802 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:41:59] "GET / HTTP/1.1" 200 -
+2025-05-18 15:42:01,290 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:42:01] "GET /users HTTP/1.1" 200 -
+2025-05-18 15:42:01,302 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:42:01] "[36mGET /static/uploads/avatars/4_sbcf-default-avatar.png HTTP/1.1[0m" 304 -
+2025-05-18 15:42:03,620 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:42:03] "GET /user/example HTTP/1.1" 200 -
+2025-05-18 15:52:09,927 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:52:09] "[35m[1mGET /user/example HTTP/1.1[0m" 500 -
+2025-05-18 15:52:09,938 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:52:09] "[36mGET /user/example?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-18 15:52:09,939 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:52:09] "[36mGET /user/example?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-18 15:52:09,955 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:52:09] "GET /user/example?__debugger__=yes&cmd=resource&f=console.png&s=8PVfBYkXN0qj1ibfPsNr HTTP/1.1" 200 -
+2025-05-18 15:52:09,961 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:52:09] "[36mGET /user/example?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-18 15:52:48,201 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:52:48] "[35m[1mGET /user/example HTTP/1.1[0m" 500 -
+2025-05-18 15:52:48,220 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:52:48] "[36mGET /user/example?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-18 15:52:48,226 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:52:48] "[36mGET /user/example?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-18 15:52:48,234 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:52:48] "[36mGET /user/example?__debugger__=yes&cmd=resource&f=console.png&s=8PVfBYkXN0qj1ibfPsNr HTTP/1.1[0m" 304 -
+2025-05-18 16:04:46,730 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 16:04:46] "GET /user/example HTTP/1.1" 200 -
+2025-05-18 16:04:50,582 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 16:04:50] "[32mPOST /change_role/example HTTP/1.1[0m" 302 -
+2025-05-18 16:04:50,591 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 16:04:50] "GET /user/example HTTP/1.1" 200 -
+2025-05-18 16:06:09,465 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 16:06:09] "GET /users HTTP/1.1" 200 -
+2025-05-18 16:06:09,484 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 16:06:09] "[36mGET /static/uploads/avatars/4_sbcf-default-avatar.png HTTP/1.1[0m" 304 -
+2025-05-18 16:06:12,635 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 16:06:12] "GET /user/org HTTP/1.1" 200 -
+2025-05-18 16:06:15,910 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 16:06:15] "[32mPOST /change_role/org HTTP/1.1[0m" 302 -
+2025-05-18 16:06:15,921 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 16:06:15] "GET /user/org HTTP/1.1" 200 -
+2025-05-18 16:06:18,960 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 16:06:18] "[32mPOST /change_role/org HTTP/1.1[0m" 302 -
+2025-05-18 16:06:18,973 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 16:06:18] "GET /user/org HTTP/1.1" 200 -
+2025-05-18 16:06:27,509 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 16:06:27] "GET /users HTTP/1.1" 200 -
+2025-05-18 16:06:27,521 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 16:06:27] "[36mGET /static/uploads/avatars/4_sbcf-default-avatar.png HTTP/1.1[0m" 304 -
+2025-05-18 16:06:29,453 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 16:06:29] "GET /user/example HTTP/1.1" 200 -
+2025-05-18 16:06:32,388 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 16:06:32] "[32mPOST /change_role/example HTTP/1.1[0m" 302 -
+2025-05-18 16:06:32,405 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 16:06:32] "GET /user/example HTTP/1.1" 200 -
+2025-05-18 18:19:55,980 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:19:55] "[32mPOST /change_role/example HTTP/1.1[0m" 302 -
+2025-05-18 18:19:55,991 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:19:55] "GET /user/example HTTP/1.1" 200 -
+2025-05-18 18:19:58,531 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:19:58] "[32mPOST /change_role/example HTTP/1.1[0m" 302 -
+2025-05-18 18:19:58,545 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:19:58] "GET /user/example HTTP/1.1" 200 -
+2025-05-18 18:20:03,934 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:20:03] "[32mPOST /change_role/example HTTP/1.1[0m" 302 -
+2025-05-18 18:20:03,943 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:20:03] "GET /user/example HTTP/1.1" 200 -
+2025-05-18 18:20:06,211 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:20:06] "GET /create_event HTTP/1.1" 200 -
+2025-05-18 18:20:08,915 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:20:08] "GET /users HTTP/1.1" 200 -
+2025-05-18 18:20:08,931 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:20:08] "[36mGET /static/uploads/avatars/4_sbcf-default-avatar.png HTTP/1.1[0m" 304 -
+2025-05-18 18:20:11,093 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:20:11] "GET / HTTP/1.1" 200 -
+2025-05-18 18:20:26,029 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:20:26] "GET /user/admin HTTP/1.1" 200 -
+2025-05-18 18:20:26,042 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:20:26] "[36mGET /static/uploads/avatars/4_sbcf-default-avatar.png HTTP/1.1[0m" 304 -
+2025-05-18 18:20:30,083 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:20:30] "GET /users HTTP/1.1" 200 -
+2025-05-18 18:20:30,096 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:20:30] "[36mGET /static/uploads/avatars/4_sbcf-default-avatar.png HTTP/1.1[0m" 304 -
+2025-05-18 18:20:32,690 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:20:32] "GET /user/example HTTP/1.1" 200 -
+2025-05-18 18:20:35,631 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:20:35] "[32mPOST /change_role/example HTTP/1.1[0m" 302 -
+2025-05-18 18:20:35,643 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:20:35] "GET /user/example HTTP/1.1" 200 -
+2025-05-18 18:20:39,535 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:20:39] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-05-18 18:20:39,542 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:20:39] "GET / HTTP/1.1" 200 -
+2025-05-18 18:20:41,686 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:20:41] "GET /login HTTP/1.1" 200 -
+2025-05-18 18:20:50,960 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:20:50] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-05-18 18:20:50,964 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:20:50] "GET / HTTP/1.1" 200 -
+2025-05-18 18:21:00,409 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:21:00] "GET /users HTTP/1.1" 200 -
+2025-05-18 18:21:00,421 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:21:00] "[36mGET /static/uploads/avatars/4_sbcf-default-avatar.png HTTP/1.1[0m" 304 -
+2025-05-18 18:21:15,066 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:21:15] "POST /bulk_attendance HTTP/1.1" 200 -
+2025-05-18 18:21:16,363 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:21:16] "GET /users HTTP/1.1" 200 -
+2025-05-18 18:21:16,374 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:21:16] "[36mGET /static/uploads/avatars/4_sbcf-default-avatar.png HTTP/1.1[0m" 304 -
+2025-05-18 18:21:19,360 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:21:19] "GET /user/participant1 HTTP/1.1" 200 -
+2025-05-18 18:21:25,791 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:21:25] "GET / HTTP/1.1" 200 -
+2025-05-18 18:21:28,564 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:21:28] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-05-18 18:21:28,568 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:21:28] "GET / HTTP/1.1" 200 -
+2025-05-18 18:21:30,441 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:21:30] "GET /login HTTP/1.1" 200 -
+2025-05-18 18:21:38,390 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:21:38] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-05-18 18:21:38,395 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:21:38] "GET / HTTP/1.1" 200 -
+2025-05-18 18:21:39,977 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:21:39] "GET /users HTTP/1.1" 200 -
+2025-05-18 18:21:39,990 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:21:39] "[36mGET /static/uploads/avatars/4_sbcf-default-avatar.png HTTP/1.1[0m" 304 -
+2025-05-18 18:21:44,150 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:21:44] "GET /user/participant1 HTTP/1.1" 200 -
+2025-05-18 18:21:50,778 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:21:50] "GET /users HTTP/1.1" 200 -
+2025-05-18 18:21:50,796 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:21:50] "[36mGET /static/uploads/avatars/4_sbcf-default-avatar.png HTTP/1.1[0m" 304 -
+2025-05-18 18:21:53,798 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:21:53] "GET /user/example HTTP/1.1" 200 -
+2025-05-18 18:21:56,911 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:21:56] "[32mPOST /change_role/example HTTP/1.1[0m" 302 -
+2025-05-18 18:21:56,922 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:21:56] "GET /user/example HTTP/1.1" 200 -
+2025-05-18 18:21:58,286 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:21:58] "GET /users HTTP/1.1" 200 -
+2025-05-18 18:21:58,300 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:21:58] "[36mGET /static/uploads/avatars/4_sbcf-default-avatar.png HTTP/1.1[0m" 304 -
+2025-05-18 18:22:00,590 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:22:00] "GET /user/participant1 HTTP/1.1" 200 -
+2025-05-18 18:22:05,613 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:22:05] "GET /users HTTP/1.1" 200 -
+2025-05-18 18:22:05,629 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:22:05] "[36mGET /static/uploads/avatars/4_sbcf-default-avatar.png HTTP/1.1[0m" 304 -
+2025-05-18 18:22:08,140 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:22:08] "GET /user/example HTTP/1.1" 200 -
+2025-05-18 18:22:12,543 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:22:12] "[32mPOST /change_role/example HTTP/1.1[0m" 302 -
+2025-05-18 18:22:12,552 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:22:12] "GET /user/example HTTP/1.1" 200 -
+2025-05-18 18:22:14,814 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:22:14] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-05-18 18:22:14,821 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:22:14] "GET / HTTP/1.1" 200 -
+2025-05-18 18:22:16,495 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:22:16] "GET /login HTTP/1.1" 200 -
+2025-05-18 18:22:25,010 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:22:25] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-05-18 18:22:25,014 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:22:25] "GET / HTTP/1.1" 200 -
+2025-05-18 18:22:26,525 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:22:26] "GET /users HTTP/1.1" 200 -
+2025-05-18 18:22:26,537 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:22:26] "[36mGET /static/uploads/avatars/4_sbcf-default-avatar.png HTTP/1.1[0m" 304 -
+2025-05-18 18:22:32,449 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:22:32] "POST /bulk_rate HTTP/1.1" 200 -
+2025-05-18 18:22:34,355 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:22:34] "GET /users HTTP/1.1" 200 -
+2025-05-18 18:22:34,370 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:22:34] "[36mGET /static/uploads/avatars/4_sbcf-default-avatar.png HTTP/1.1[0m" 304 -
+2025-05-18 18:22:38,027 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:22:38] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-05-18 18:22:38,038 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:22:38] "GET / HTTP/1.1" 200 -
+2025-05-18 18:22:39,627 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:22:39] "GET /login HTTP/1.1" 200 -
+2025-05-18 18:22:47,285 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:22:47] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-05-18 18:22:47,290 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:22:47] "GET / HTTP/1.1" 200 -
+2025-05-18 18:22:48,530 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:22:48] "GET /users HTTP/1.1" 200 -
+2025-05-18 18:22:48,543 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:22:48] "[36mGET /static/uploads/avatars/4_sbcf-default-avatar.png HTTP/1.1[0m" 304 -
+2025-05-18 18:22:50,908 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:22:50] "GET /user/example HTTP/1.1" 200 -
+2025-05-18 18:22:53,762 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:22:53] "[32mPOST /change_role/example HTTP/1.1[0m" 302 -
+2025-05-18 18:22:53,777 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:22:53] "GET /user/example HTTP/1.1" 200 -
+2025-05-18 18:22:55,187 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:22:55] "GET /users HTTP/1.1" 200 -
+2025-05-18 18:22:55,202 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:22:55] "[36mGET /static/uploads/avatars/4_sbcf-default-avatar.png HTTP/1.1[0m" 304 -
+2025-05-18 18:22:58,084 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:22:58] "GET /user/expert HTTP/1.1" 200 -
+2025-05-18 18:23:03,764 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:23:03] "GET /users HTTP/1.1" 200 -
+2025-05-18 18:23:03,783 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:23:03] "[36mGET /static/uploads/avatars/4_sbcf-default-avatar.png HTTP/1.1[0m" 304 -
+2025-05-18 18:23:10,001 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:23:10] "GET /users?search=exa HTTP/1.1" 200 -
+2025-05-18 18:23:13,733 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:23:13] "GET /users?search= HTTP/1.1" 200 -
+2025-05-18 18:23:13,751 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:23:13] "[36mGET /static/uploads/avatars/4_sbcf-default-avatar.png HTTP/1.1[0m" 304 -
+2025-05-18 18:23:15,119 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:23:15] "GET / HTTP/1.1" 200 -
+2025-05-18 18:23:17,786 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:23:17] "GET /event_attendance/51 HTTP/1.1" 200 -
+2025-05-18 18:23:17,806 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:23:17] "[36mGET /static/uploads/avatars/4_sbcf-default-avatar.png HTTP/1.1[0m" 304 -
+2025-05-18 18:23:22,074 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:23:22] "GET / HTTP/1.1" 200 -
+2025-05-18 18:23:28,673 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:23:28] "GET /scan_qr HTTP/1.1" 200 -
+2025-05-18 18:23:30,328 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:23:30] "GET /generate_qr HTTP/1.1" 200 -
+2025-05-18 18:23:32,191 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:23:32] "GET /user/admin HTTP/1.1" 200 -
+2025-05-18 18:23:32,204 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:23:32] "[36mGET /static/uploads/avatars/4_sbcf-default-avatar.png HTTP/1.1[0m" 304 -
+2025-05-18 18:25:40,605 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:25:40] "GET / HTTP/1.1" 200 -
+2025-05-18 18:29:14,305 - werkzeug - INFO -  * Detected change in '/home/sonya/PycharmProjects/PythonProject3/app.py', reloading
+2025-05-18 18:29:14,879 - werkzeug - INFO -  * Restarting with stat
+2025-05-18 18:29:17,806 - werkzeug - WARNING -  * Debugger is active!
+2025-05-18 18:29:17,811 - werkzeug - INFO -  * Debugger PIN: 829-694-485
+2025-05-18 18:32:45,784 - werkzeug - INFO -  * Detected change in '/home/sonya/PycharmProjects/PythonProject3/app.py', reloading
+2025-05-18 18:32:46,911 - werkzeug - INFO -  * Restarting with stat
+2025-05-18 18:32:52,390 - werkzeug - WARNING -  * Debugger is active!
+2025-05-18 18:32:52,396 - werkzeug - INFO -  * Debugger PIN: 829-694-485
+2025-05-18 18:36:23,827 - werkzeug - INFO -  * Detected change in '/home/sonya/PycharmProjects/PythonProject3/app.py', reloading
+2025-05-18 18:36:24,541 - werkzeug - INFO -  * Restarting with stat
+2025-05-18 18:36:27,383 - werkzeug - WARNING -  * Debugger is active!
+2025-05-18 18:36:27,385 - werkzeug - INFO -  * Debugger PIN: 829-694-485
+2025-05-18 18:40:28,439 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.29:5000
+2025-05-18 18:40:28,439 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-18 18:40:28,439 - werkzeug - INFO -  * Restarting with stat
+2025-05-18 18:40:31,171 - werkzeug - WARNING -  * Debugger is active!
+2025-05-18 18:40:31,173 - werkzeug - INFO -  * Debugger PIN: 829-694-485
+2025-05-18 18:40:38,218 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-albert-small-v2
+2025-05-18 18:40:45,239 - __main__ - INFO - ИИ-модель инициализирована
+2025-05-18 18:40:45,445 - __main__ - INFO - Модель переобучена с четким разделением фестивалей
+2025-05-18 18:40:45,467 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:40:45] "GET / HTTP/1.1" 200 -
+2025-05-18 18:40:49,001 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:40:49] "GET /users HTTP/1.1" 200 -
+2025-05-18 18:40:49,017 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:40:49] "[36mGET /static/uploads/avatars/4_sbcf-default-avatar.png HTTP/1.1[0m" 304 -
+2025-05-18 18:40:51,888 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:40:51] "GET /create_event HTTP/1.1" 200 -
+2025-05-18 18:40:53,232 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:40:53] "GET / HTTP/1.1" 200 -
+2025-05-18 18:40:55,682 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:40:55] "GET /generate_qr HTTP/1.1" 200 -
+2025-05-18 18:40:59,950 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:40:59] "GET /generate_qr HTTP/1.1" 200 -
+2025-05-18 18:41:01,241 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:41:01] "GET /generate_qr HTTP/1.1" 200 -
+2025-05-18 18:41:02,050 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:41:02] "GET /generate_qr HTTP/1.1" 200 -
+2025-05-18 18:41:02,630 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:41:02] "GET /generate_qr HTTP/1.1" 200 -
+2025-05-18 18:41:06,188 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 18:41:06] "GET / HTTP/1.1" 200 -
+2025-05-18 18:49:27,574 - werkzeug - INFO -  * Detected change in '/home/sonya/PycharmProjects/PythonProject3/app.py', reloading
+2025-05-18 18:49:28,212 - werkzeug - INFO -  * Restarting with stat
+2025-05-18 18:49:31,538 - werkzeug - WARNING -  * Debugger is active!
+2025-05-18 18:49:31,540 - werkzeug - INFO -  * Debugger PIN: 829-694-485
+2025-05-18 18:49:39,013 - werkzeug - INFO -  * Detected change in '/home/sonya/PycharmProjects/PythonProject3/app.py', reloading
+2025-05-18 18:49:40,112 - werkzeug - INFO -  * Restarting with stat
+2025-05-18 18:49:45,425 - werkzeug - WARNING -  * Debugger is active!
+2025-05-18 18:49:45,428 - werkzeug - INFO -  * Debugger PIN: 829-694-485
+2025-05-18 18:50:07,263 - werkzeug - INFO -  * Detected change in '/home/sonya/PycharmProjects/PythonProject3/app.py', reloading
+2025-05-18 18:50:07,979 - werkzeug - INFO -  * Restarting with stat
+2025-05-18 18:50:11,503 - werkzeug - WARNING -  * Debugger is active!
+2025-05-18 18:50:11,505 - werkzeug - INFO -  * Debugger PIN: 829-694-485
+2025-05-18 19:00:19,262 - werkzeug - INFO -  * Detected change in '/home/sonya/PycharmProjects/PythonProject3/app.py', reloading
+2025-05-18 19:00:19,978 - werkzeug - INFO -  * Restarting with stat
+2025-05-18 19:00:23,135 - werkzeug - WARNING -  * Debugger is active!
+2025-05-18 19:00:23,137 - werkzeug - INFO -  * Debugger PIN: 829-694-485
+2025-05-18 19:10:02,252 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.29:5000
+2025-05-18 19:10:02,252 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-18 19:10:02,252 - werkzeug - INFO -  * Restarting with stat
+2025-05-18 19:10:05,043 - werkzeug - WARNING -  * Debugger is active!
+2025-05-18 19:10:05,045 - werkzeug - INFO -  * Debugger PIN: 829-694-485
+2025-05-18 19:10:05,182 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-albert-small-v2
+2025-05-18 19:10:05,322 - __main__ - INFO - ИИ-модель инициализирована
+2025-05-18 19:10:05,599 - __main__ - INFO - Модель переобучена с четким разделением фестивалей
+2025-05-18 19:10:05,621 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 19:10:05] "GET / HTTP/1.1" 200 -
+2025-05-18 19:10:12,439 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 19:10:12] "GET /users HTTP/1.1" 200 -
+2025-05-18 19:10:12,456 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 19:10:12] "[36mGET /static/uploads/avatars/4_sbcf-default-avatar.png HTTP/1.1[0m" 304 -
+2025-05-18 19:10:17,586 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 19:10:17] "GET /user/example HTTP/1.1" 200 -
+2025-05-18 19:10:21,483 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 19:10:21] "GET /user/admin HTTP/1.1" 200 -
+2025-05-18 19:10:21,519 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 19:10:21] "[36mGET /static/uploads/avatars/4_sbcf-default-avatar.png HTTP/1.1[0m" 304 -
+2025-05-18 19:10:23,639 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 19:10:23] "GET /users HTTP/1.1" 200 -
+2025-05-18 19:10:23,653 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 19:10:23] "[36mGET /static/uploads/avatars/4_sbcf-default-avatar.png HTTP/1.1[0m" 304 -
+2025-05-18 19:10:27,116 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 19:10:27] "GET /generate_qr HTTP/1.1" 200 -
+2025-05-18 19:10:29,009 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 19:10:29] "GET /scan_qr HTTP/1.1" 200 -
+2025-05-18 19:10:30,844 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 19:10:30] "GET /generate_qr HTTP/1.1" 200 -
+2025-05-18 19:10:33,569 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 19:10:33] "GET /scan_qr HTTP/1.1" 200 -
+2025-05-18 19:10:40,393 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 19:10:40] "[32mPOST /scan_qr HTTP/1.1[0m" 302 -
+2025-05-18 19:10:40,397 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 19:10:40] "GET /scan_qr HTTP/1.1" 200 -
+2025-05-18 19:10:46,406 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 19:10:46] "[32mPOST /scan_qr HTTP/1.1[0m" 302 -
+2025-05-18 19:10:46,414 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 19:10:46] "GET /user/org HTTP/1.1" 200 -
+2025-05-18 19:10:54,130 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 19:10:54] "GET /users HTTP/1.1" 200 -
+2025-05-18 19:10:54,145 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 19:10:54] "[36mGET /static/uploads/avatars/4_sbcf-default-avatar.png HTTP/1.1[0m" 304 -
+2025-05-18 19:10:56,195 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 19:10:56] "GET /user/example HTTP/1.1" 200 -
+2025-05-18 19:10:58,675 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 19:10:58] "[32mPOST /change_role/example HTTP/1.1[0m" 302 -
+2025-05-18 19:10:58,685 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 19:10:58] "GET /user/example HTTP/1.1" 200 -
+2025-05-18 19:11:00,967 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 19:11:00] "[32mPOST /change_role/example HTTP/1.1[0m" 302 -
+2025-05-18 19:11:00,980 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 19:11:00] "GET /user/example HTTP/1.1" 200 -
+2025-05-18 19:11:04,054 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 19:11:04] "[32mPOST /change_role/example HTTP/1.1[0m" 302 -
+2025-05-18 19:11:04,069 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 19:11:04] "GET /user/example HTTP/1.1" 200 -
+2025-05-18 19:11:07,304 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 19:11:07] "GET / HTTP/1.1" 200 -

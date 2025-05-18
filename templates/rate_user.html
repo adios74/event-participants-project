@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+    .rating-form-container {
+        max-width: 400px;
+        margin: 30px auto;
+        padding: 20px;
+        background: #fff;
+        border-radius: 8px;
+        border: 1px solid #eaeaea;
+    }
+
+    .rating-form-title {
+        font-size: 20px;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .rating-options {
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        margin: 20px 0;
+    }
+
+    .rating-option {
+        display: none;
+    }
+
+    .rating-option + label {
+        cursor: pointer;
+        font-size: 24px;
+        color: #e0e0e0;
+        order: 1; /* Измененный порядок */
+    }
+
+    .rating-option:checked + label,
+    .rating-option:checked ~ label {
+        color: #1a73e8;
+    }
+
+    .rating-options:hover label {
+        color: #1a73e8;
+    }
+
+    .rating-options label:hover,
+    .rating-options label:hover ~ label {
+        color: #e0e0e0;
+    }
+
+    .submit-rating {
+        background: #1a73e8;
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 4px;
+        font-size: 14px;
+        cursor: pointer;
+        display: block;
+        margin: 20px auto 0;
+    }
+</style>
+
+<div class="rating-form-container">
+    <h3 class="rating-form-title">Оцените {{ user.username }}</h3>
+
+    <form method="POST">
+        {{ form.hidden_tag() }}
+
+        <div class="rating-options">
+            {% for i in range(1, 6) %}
+                <input type="radio"
+                       id="rating-{{ i }}"
+                       name="rating"
+                       value="{{ i }}"
+                       class="rating-option"
+                       {% if form.rating.data == i %}checked{% endif %}>
+                <label for="rating-{{ i }}">★</label>
+            {% endfor %}
+        </div>
+
+        <button type="submit" class="submit-rating">
+            {{ 'Обновить' if form.rating.data else 'Отправить' }}
+        </button>
+    </form>
+</div>
+{% endblock %}

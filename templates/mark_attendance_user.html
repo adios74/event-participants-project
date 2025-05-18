@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="attendance-form-container">
+    <h2>Отметка посещения для {{ user.username }}</h2>
+
+    <form method="POST">
+        {{ form.hidden_tag() }}
+
+        <div class="form-group">
+            {{ form.event_id.label }}
+            {{ form.event_id(class="form-control") }}
+        </div>
+
+        <div class="form-group">
+            {{ form.attended.label }}
+            {{ form.attended }}
+        </div>
+
+        {{ form.submit(class="btn btn-primary") }}
+    </form>
+</div>
+{% endblock %}

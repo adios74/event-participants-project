@@ -6,6 +6,7 @@
         {% else %}
         <title>Добро пожаловать</title>
         {% endif %}
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
         <style>
             body {
                 font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -43,6 +44,12 @@
     <body>
         <div>
             <a href="{{ url_for('index') }}">Главная</a>
+            {% if not current_user.is_anonymous and (current_user.is_organizer or current_user.is_admin or current_user.is_expert) %}
+            <a href="{{ url_for('user_list') }}">Участники</a>
+            {% if not current_user.is_anonymous and (current_user.is_organizer or current_user.is_admin) %}
+                <a href="{{ url_for('create_event') }}">Добавить мероприятие</a>
+            {% endif %}
+            {% endif %}
             {% if current_user.is_anonymous %}
             <a href="{{ url_for('login') }}">Вход</a>
             {% else %}

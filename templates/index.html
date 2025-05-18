@@ -1,5 +1,168 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>Здравствуйте, {{ current_user.username }}!</h1>
+    <style>
+        .welcome-message {
+            font-size: 24px;
+            margin-bottom: 30px;
+            color: #2c3e50;
+        }
+        .events-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        .event-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .event-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+        }
+        .event-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #1a73e8;
+        }
+        .event-meta {
+            display: flex;
+            gap: 15px;
+            margin: 10px 0;
+            font-size: 14px;
+            color: #666;
+        }
+        .event-meta i {
+            margin-right: 5px;
+            color: #1a73e8;
+        }
+        .event-description {
+            color: #555;
+            line-height: 1.5;
+            margin: 15px 0;
+        }
+        .event-actions {
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .attendance-link {
+            color: #1a73e8;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .create-event-btn {
+            display: inline-block;
+            background-color: #1a73e8;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            margin-bottom: 30px;
+        }
+        .create-event-btn:hover {
+            background-color: #0d5bba;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(26, 115, 232, 0.4);
+        }
+        .delete-btn {
+            background: #ff4444;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .delete-btn:hover {
+            background: #cc0000;
+        }
+        .category-header {
+            font-size: 22px;
+            margin: 40px 0 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #1a73e8;
+            color: #2c3e50;
+        }
+        .category-description {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+    </style>
+
+    <h1 class="welcome-message">
+        Мероприятия:
+</h1>
+
+    {% if current_user.is_organizer or current_user.is_admin %}
+    <a href="{{ url_for('create_event') }}" class="create-event-btn">+ Создать мероприятие</a>
+    {% endif %}
+
+    {% for category in categories %}
+    <div class="category-section">
+        <h2 class="category-header">{{ category.name }}</h2>
+        {% if category.description %}
+        <p class="category-description">{{ category.description }}</p>
+        {% endif %}
+
+        <div class="events-container">
+            {% for event in category.events|sort(attribute='date') %}
+            <div class="event-card">
+                <h3 class="event-title">{{ event.title }}</h3>
+                <div class="event-meta">
+                    <span><i class="fas fa-calendar-alt"></i> {{ event.date.strftime('%d.%m.%Y %H:%M') }}</span>
+                    <span><i class="fas fa-map-marker-alt"></i> {{ event.location }}</span>
+                </div>
+                <div class="event-description">
+                    {{ event.description }}
+                </div>
+                <div class="event-actions">
+                    {% if current_user.is_organizer or current_user.is_admin %}
+                    <a href="{{ url_for('event_attendance', event_id=event.id) }}" class="attendance-link">
+                        <i class="fas fa-user-check"></i> Управление посещаемостью
+                    </a>
+                    {% endif %}
+                    {% if current_user.is_admin %}
+                    <form method="POST" action="{{ url_for('delete_event', event_id=event.id) }}" style="display: inline;">
+                        <button type="submit" class="delete-btn" onclick="return confirm('Удалить мероприятие?')">
+                            Удалить
+                        </button>
+                    </form>
+                    {% endif %}
+                </div>
+            </div>
+            {% else %}
+            <div class="event-card" style="text-align: center; padding: 30px;">
+                В этой категории пока нет мероприятий
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% else %}
+    <div class="events-container">
+        {% for event in events|sort(attribute='date') %}
+        <div class="event-card">
+            <h3 class="event-title">{{ event.title }}</h3>
+            <div class="event-meta">
+                <span><i class="fas fa-calendar-alt"></i> {{ event.date.strftime('%d.%m.%Y %H:%M') }}</span>
+                <span><i class="fas fa-map-marker-alt"></i> {{ event.location }}</span>
+            </div>
+            <div class="event-description">
+                {{ event.description }}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% endfor %}
 {% endblock %}

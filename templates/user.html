@@ -18,6 +18,7 @@
         }
         .avatar-container {
             flex-shrink: 0;
+            position: relative;
         }
         .avatar {
             width: 150px;
@@ -31,10 +32,67 @@
             flex-grow: 1;
         }
         .username {
-            margin: 0 0 15px 0;
+            margin: 0 0 10px 0;
             color: #2c3e50;
             font-size: 32px;
             font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .user-role {
+            font-size: 14px;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-weight: 500;
+            cursor: pointer;
+            position: relative;
+            display: inline-block;
+        }
+        .role-admin {
+            background-color: #ffebee;
+            color: #c62828;
+            border: 1px solid #ef9a9a;
+        }
+        .role-organizer {
+            background-color: #e8f5e9;
+            color: #2e7d32;
+            border: 1px solid #a5d6a7;
+        }
+        .role-expert {
+            background-color: #e3f2fd;
+            color: #1565c0;
+            border: 1px solid #90caf9;
+        }
+        .role-participant {
+            background-color: #f3e5f5;
+            color: #6a1b9a;
+            border: 1px solid #ce93d8;
+        }
+        .role-dropdown {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 120px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 6px;
+            overflow: hidden;
+            top: 100%;
+            left: 0;
+        }
+        .role-dropdown a {
+            color: black;
+            padding: 8px 12px;
+            text-decoration: none;
+            display: block;
+            font-size: 13px;
+        }
+        .role-dropdown a:hover {
+            background-color: #f1f1f1;
+        }
+        .user-role:hover .role-dropdown {
+            display: block;
         }
         .about-me {
             background: #f8f9fa;
@@ -65,6 +123,144 @@
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(26, 115, 232, 0.4);
         }
+        .rating-container {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 16px;
+            padding: 25px;
+            margin: 30px 0;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.3s ease;
+        }
+        .rating-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        .average-rating {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+        .stars-container {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+        }
+        .stars {
+            display: flex;
+        }
+        .stars i {
+            color: #e0e0e0;
+            font-size: 24px;
+            margin-right: 5px;
+        }
+        .stars .filled {
+            color: #1a73e8;
+        }
+        .rating-count {
+            margin-left: 10px;
+            font-size: 14px;
+            color: #777;
+        }
+        .rate-btn {
+            background: #1a73e8;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            font-size: 14px;
+            cursor: pointer;
+            margin-top: 10px;
+            display: inline-block;
+        }
+        .your-rating {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #555;
+        }
+        .events-attended-container {
+            margin-top: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 12px;
+        }
+        .attended-events-list {
+            display: grid;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .attended-event {
+            padding: 15px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .attendance-status {
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+        .attendance-status.attended {
+            background: #e8f5e9;
+            color: #2e7d32;
+        }
+        .attendance-status.not-attended {
+            background: #ffebee;
+            color: #c62828;
+        }
+        .edit-attendance-btn {
+            display: inline-block;
+            padding: 5px 10px;
+            background: #e3f2fd;
+            color: #1565c0;
+            border-radius: 4px;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        .attendance-section {
+            margin-top: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+        .attended-events {
+            margin-top: 15px;
+        }
+        .attendance-form {
+            margin-top: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .form-label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+        .submit-btn {
+            background: #1a73e8;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .role-change-form {
+            display: inline;
+        }
+
     </style>
 
     <div class="profile-container">
@@ -73,39 +269,40 @@
                 <img src="{{ user.avatar_url() }}" class="avatar">
             </div>
             <div class="user-info">
-                <h1 class="username">{{ user.username }}</h1>
+                <h1 class="username">
+                    {{ user.username }}
+                    <span class="user-role
+                        {% if user.role == 'admin' %}role-admin
+                        {% elif user.role == 'organizer' %}role-organizer
+                        {% elif user.role == 'expert' %}role-expert
+                        {% else %}role-participant{% endif %}">
+                        {% if user.role == 'admin' %}Администратор
+                        {% elif user.role == 'organizer' %}Организатор
+                        {% elif user.role == 'expert' %}Эксперт
+                        {% else %}Участник{% endif %}
 
-                <!-- БЕЙДЖ РОЛИ -->
-                <span style="
-                    display: inline-block;
-                    background-color:
-                        {% if user.role == 'admin' %}#ffe0e0
-                        {% elif user.role == 'expert' %}#e0f7fa
-                        {% elif user.role == 'organizer' %}#fff4e0
-                        {% else %}#f0f0f0{% endif %};
-                    color:
-                        {% if user.role == 'admin' %}#c62828
-                        {% elif user.role == 'expert' %}#00796b
-                        {% elif user.role == 'organizer' %}#ef6c00
-                        {% else %}#555{% endif %};
-                    padding: 6px 14px;
-                    font-size: 14px;
-                    font-weight: 600;
-                    border-radius: 20px;
-                    margin-top: 6px;
-                    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-                ">
-                    {% if user.role == 'admin' %}
-                        🛡 Администратор
-                    {% elif user.role == 'expert' %}
-                        🧠 Эксперт
-                    {% elif user.role == 'organizer' %}
-                        📅 Организатор
-                    {% else %}
-                        👤 Участник
-                    {% endif %}
-                </span>
-
+                        {% if current_user.is_admin and user != current_user %}
+                        <div class="role-dropdown">
+                            <form class="role-change-form" method="POST" action="{{ url_for('change_role', username=user.username) }}">
+                                <input type="hidden" name="new_role" value="admin">
+                                <a href="#" onclick="this.closest('form').submit(); return false;">Администратор</a>
+                            </form>
+                            <form class="role-change-form" method="POST" action="{{ url_for('change_role', username=user.username) }}">
+                                <input type="hidden" name="new_role" value="organizer">
+                                <a href="#" onclick="this.closest('form').submit(); return false;">Организатор</a>
+                            </form>
+                            <form class="role-change-form" method="POST" action="{{ url_for('change_role', username=user.username) }}">
+                                <input type="hidden" name="new_role" value="expert">
+                                <a href="#" onclick="this.closest('form').submit(); return false;">Эксперт</a>
+                            </form>
+                            <form class="role-change-form" method="POST" action="{{ url_for('change_role', username=user.username) }}">
+                                <input type="hidden" name="new_role" value="participant">
+                                <a href="#" onclick="this.closest('form').submit(); return false;">Участник</a>
+                            </form>
+                        </div>
+                        {% endif %}
+                    </span>
+                </h1>
                 {% if user.about_me %}
                 <div class="about-me">
                     {{ user.about_me }}
@@ -114,8 +311,98 @@
             </div>
         </div>
 
-        {% if user == current_user %}
-        <a href="{{ url_for('edit_profile') }}" class="edit-btn">Редактировать профиль</a>
+        {% if user == current_user or current_user.is_admin %}
+        <a href="{{ url_for('edit_profile_with_username', username=user.username) }}" class="edit-btn">Редактировать профиль</a>
         {% endif %}
+
+        <div class="rating-container">
+            <h3 class="rating-title">Рейтинг пользователя</h3>
+
+            <div class="average-rating">
+                Средняя оценка: <strong>{{ user.get_average_rating() }}</strong>/5
+            </div>
+
+            <div class="stars-container">
+                <div class="stars">
+                    {% for i in range(1, 6) %}
+                        <i class="fas fa-star {% if i <= user.get_average_rating() %}filled{% endif %}"></i>
+                    {% endfor %}
+                </div>
+                <span class="rating-count">({{ user.ratings_received.count() }})</span>
+            </div>
+
+            {% if current_user.is_authenticated and current_user != user
+                and (current_user.is_admin or current_user.is_expert) %}
+                <a href="{{ url_for('rate_user', username=user.username) }}" class="rate-btn">
+                    {{ 'Изменить оценку' if current_user.has_rated(user) else 'Оценить' }}
+                </a>
+            {% endif %}
+        </div>
+
+        {% if current_user.is_authenticated and (current_user.is_organizer or current_user.is_admin) %}
+        <div class="attendance-section">
+            <h3>Отметить посещение</h3>
+            <form method="POST" action="{{ url_for('mark_attendance_user', user_id=user.id) }}" class="attendance-form">
+                <div class="form-group">
+                    <label class="form-label">Выберите мероприятие:</label>
+                    <select name="event_id" class="form-control" required>
+                        {% if events %}
+                            {% for event in events %}
+                            <option value="{{ event.id }}">{{ event.title }} ({{ event.date.strftime('%d.%m.%Y') }})</option>
+                            {% endfor %}
+                        {% else %}
+                            <option value="">Нет доступных мероприятий</option>
+                        {% endif %}
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">
+                        <input type="checkbox" name="attended"> Присутствовал
+                    </label>
+                </div>
+                <button type="submit" class="submit-btn">Сохранить</button>
+            </form>
+        </div>
+        {% endif %}
+
+        <div class="events-attended-container">
+            <h3>Посещенные мероприятия</h3>
+            <div class="attended-events-list">
+                {% for attendance in user.attendances %}
+                <div class="attended-event">
+                    <h4>{{ attendance.event.title }}</h4>
+                    <p>
+                        <i class="fas fa-calendar-alt"></i>
+                        {{ attendance.event.date.strftime('%d %B %Y, %H:%M') }}
+                    </p>
+                    <p>
+                        Статус:
+                        <span class="attendance-status {% if attendance.attended %}attended{% else %}not-attended{% endif %}">
+                            {% if attendance.attended %}Присутствовал{% else %}Не присутствовал{% endif %}
+                        </span>
+                    </p>
+                    {% if current_user.is_admin or current_user.is_organizer or current_user.is_expert %}
+                    <a href="{{ url_for('mark_attendance', event_id=attendance.event.id, user_id=user.id) }}"
+                       class="edit-attendance-btn">
+                        Изменить статус
+                    </a>
+                    {% endif %}
+                </div>
+                {% else %}
+                <p>Участник еще не посещал мероприятия</p>
+                {% endfor %}
+            </div>
+        </div>
     </div>
+
+    <script>
+        document.addEventListener('click', function(event) {
+            const roleDropdowns = document.querySelectorAll('.role-dropdown');
+            roleDropdowns.forEach(dropdown => {
+                if (!dropdown.parentElement.contains(event.target)) {
+                    dropdown.style.display = 'none';
+                }
+            });
+        });
+    </script>
 {% endblock %}

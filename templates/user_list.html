@@ -1,0 +1,268 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+    .users-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+    .user-card {
+        background: white;
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        text-align: center;
+        transition: transform 0.3s ease;
+        position: relative;
+    }
+
+    .user-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .user-avatar {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 15px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .user-avatar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .user-name {
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+
+    .user-role {
+        font-size: 12px;
+        color: #666;
+        margin-bottom: 10px;
+    }
+
+    .search-box {
+        margin-bottom: 30px;
+    }
+
+    .search-input {
+        width: 100%;
+        padding: 12px 20px;
+        border: 1px solid #ddd;
+        border-radius: 30px;
+        font-size: 16px;
+    }
+
+    .bulk-actions {
+        margin: 30px 0;
+        padding: 20px;
+        background: #f8f9fa;
+        border-radius: 8px;
+    }
+
+    .bulk-form {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+        align-items: flex-end;
+    }
+
+    .form-group {
+        margin-bottom: 0;
+    }
+
+    .form-control {
+        padding: 8px 12px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    .submit-btn {
+        background: #1a73e8;
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .checkbox-container {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
+    .user-checkbox {
+        transform: scale(1.3);
+    }
+</style>
+
+<div class="container">
+    <h2>Участники</h2>
+
+    <div class="search-box">
+        <form method="GET" action="{{ url_for('user_list') }}">
+            <input type="text" name="search" class="search-input" placeholder="Поиск по имени..."
+                   value="{{ request.args.get('search', '') }}">
+        </form>
+    </div>
+
+    {% if current_user.is_admin or current_user.is_organizer or current_user.is_expert %}
+    <div class="bulk-actions">
+        <h3>Групповые действия</h3>
+
+        {% if current_user.is_admin or current_user.is_organizer %}
+        <form id="bulk-attendance-form" class="bulk-form">
+            <div class="form-group">
+                <label>Мероприятие:</label>
+                <select name="event_id" class="form-control" required>
+                    {% for event in events %}
+                    <option value="{{ event.id }}">{{ event.title }} ({{ event.date.strftime('%d.%m.%Y') }})</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" name="attended" checked> Присутствовал
+                </label>
+            </div>
+            <button type="button" class="submit-btn" onclick="submitBulkAttendance()">Отметить посещаемость</button>
+        </form>
+        {% endif %}
+
+        {% if current_user.is_admin or current_user.is_expert %}
+        <form id="bulk-rating-form" class="bulk-form" style="margin-top: 20px;">
+            <div class="form-group">
+                <label>Оценка:</label>
+                <select name="rating" class="form-control" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5" selected>5</option>
+                </select>
+            </div>
+            <button type="button" class="submit-btn" onclick="submitBulkRating()">Выставить оценки</button>
+        </form>
+        {% endif %}
+    </div>
+    {% endif %}
+
+    <div class="users-grid">
+        {% for user in users %}
+        <div class="user-card">
+            <div class="checkbox-container">
+                <input type="checkbox" class="user-checkbox" data-user-id="{{ user.id }}">
+            </div>
+            <div class="user-avatar">
+                <img src="{{ user.avatar_url() }}">
+            </div>
+            <h3 class="user-name">
+                <a href="{{ url_for('user', username=user.username) }}">{{ user.username }}</a>
+            </h3>
+            <div class="user-role">
+                {% if user.role == 'admin' %}Администратор
+                {% elif user.role == 'organizer' %}Организатор
+                {% elif user.role == 'expert' %}Эксперт
+                {% else %}Участник{% endif %}
+            </div>
+            <div class="user-rating">
+                Рейтинг: {{ user.get_average_rating() }}/5
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<script>
+document.querySelector('.search-input').addEventListener('input', function(e) {
+    if (this.value.length > 2 || this.value.length === 0) {
+        this.form.submit();
+    }
+});
+
+function getSelectedUserIds() {
+    const checkboxes = document.querySelectorAll('.user-checkbox:checked');
+    return Array.from(checkboxes).map(cb => cb.dataset.userId);
+}
+
+function submitBulkAttendance() {
+    const userIds = getSelectedUserIds();
+    if (userIds.length === 0) {
+        alert('Выберите хотя бы одного участника');
+        return;
+    }
+
+    const form = document.getElementById('bulk-attendance-form');
+    const eventId = form.event_id.value;
+    const attended = form.attended.checked;
+
+    fetch('/bulk_attendance', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            user_ids: userIds,
+            event_id: eventId,
+            attended: attended
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            alert('Посещаемость успешно обновлена');
+            location.reload();
+        } else {
+            alert('Ошибка: ' + data.error);
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('Произошла ошибка');
+    });
+}
+
+function submitBulkRating() {
+    const userIds = getSelectedUserIds();
+    if (userIds.length === 0) {
+        alert('Выберите хотя бы одного участника');
+        return;
+    }
+
+    const form = document.getElementById('bulk-rating-form');
+    const rating = form.rating.value;
+
+    fetch('/bulk_rate', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            user_ids: userIds,
+            rating: rating
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            alert('Оценки успешно выставлены');
+            location.reload();
+        } else {
+            alert('Ошибка: ' + data.error);
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('Произошла ошибка');
+    });
+}
+</script>
+{% endblock %}
